@@ -31,24 +31,10 @@ function Events({ title }) {
       <div className="Drivercontainer">
         <div className="MainContent">
           <div className="DriverHeading">
-            <p> Driver Details</p>
+            <p>Upcoming Events</p>
           </div>
-          <div className="Events-container">
-            {Events.map((driver) => (
-              <div className="driver-card" key={driver.id}>
-                <div className="driver-image-container">
-                  <img
-                    className="driver-image"
-                    src={driver.Driver_Pic}
-                    alt={`Driver ${driver.Name}`}
-                  />
-                </div>
-                <div className="driver-info">
-                  <div className="driver-name">{driver.Name}</div>
-                  <div className="driver-phone">{driver.Phone_Number}</div>
-                </div>
-              </div>
-            ))}
+          <div className="DriverHeading">
+            <p>Past Events</p>
           </div>
         </div>
         <div className="Eventsidebar"></div>

@@ -44,7 +44,7 @@ function Header({ title }) {
             </div>
             <div className="nav-item">
               <Typography variant="h6" component="div">
-                <Link to="/Team" className="nav-link">
+                <Link to="/Events" className="nav-link">
                   Events
                 </Link>
               </Typography>
