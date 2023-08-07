@@ -17,6 +17,7 @@ Welcome to the GEC Coders Club website project! This website serves as the onlin
 
 This project is build using basic React.js architecture. The plan and prototype for the project is described on the excalidraw Live collaboration Sketch. Feel free to give you suggestion in the excalidraw plan. If you cant able to open the online collaboration link of Excalidraw plan, you can use Excalidraw extension in vscode to open and edit the plan.
 
+![Current State of the Project](CurrentState.jpg)
 
 ### Current Plan
 

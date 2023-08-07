@@ -9,7 +9,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import { Link } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import logo from "./ClubLogo.png"; // Import the logo file
+import logo from "./ClubLogo.jpg"; // Import the logo file
 
 import "./Header.css";
 
