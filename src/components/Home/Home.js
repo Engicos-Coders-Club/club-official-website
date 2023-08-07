@@ -1,13 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import L from "leaflet";
-
+import React from "react";
 import "./Home.css";
 
-
 function Home() {
-  const [locations, setLocations] = useState([]);
-
   return (
     <div className="Home">
       <div className="container">
