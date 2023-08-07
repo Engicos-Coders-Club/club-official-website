@@ -1,4 +1,3 @@
-// Team Members : 1. Aizaz, 2.Pradhnesh, 3. Sahil
 
 import React, { useState, useEffect } from "react";
 
