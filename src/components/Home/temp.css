@@ -1,0 +1,32 @@
+.containerr {
+    display: flex;
+}
+
+.MapContainer {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    color: #fff;
+    margin-right: auto;
+    border-radius: 5%;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    width: 20%;
+    height: calc(100vh - 80px);
+    flex-shrink: 0;
+}
+
+.App {
+    background-color: black;
+}
+
+.btnCont {
+    display: flex;
+    justify-content: center;
+}

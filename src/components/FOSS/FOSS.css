@@ -1,0 +1,148 @@
+.FOSSHome {
+    height: 93vh;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+}
+
+.FOSScontainer {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex: 1;
+    height: 93vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.MainContent {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 1 1;
+    height: 90vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 14px;
+    width: 80%;
+    background-color: rgb(14, 70, 46);
+    border-radius: 40px
+}
+
+.FOSS-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.Bus-card {
+    background-color: rgba(255, 255, 255, 0.4);
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    margin-top: -1px;
+}
+
+.Bus-image-container {
+    width: 100%;
+    height: 100%;
+    padding: 99px;
+    position: relative;
+    display: contents;
+}
+
+.Bus-image {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 32px;
+    border-radius: 200px;
+}
+
+.siderbar {
+    background-color: rgb(0, 0, 0);
+}
+
+.Bus-info {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(204, 237, 243);
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+
+.Bus-name {
+    font-weight: bold;
+}
+
+.Bus-phone {
+    font-style: italic;
+}
+
+.FOSSHeading {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1px;
+    color: rgb(136, 248, 196);
+    font-size: 34px;
+    font-weight: bold;
+    font-family: ui-monospace;
+}
+
+
+
+
+/* SIde bar css to override */
+/* 
+.sidebar {
+    position: sticky;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    overflow-y: auto;
+    display: grid;
+}
+
+.grid {
+    margin-bottom: 20px;
+    display: inherit;
+    gap: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+
+.subline {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    color: aqua;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: aliceblue;
+} */

@@ -1,0 +1,23 @@
+.Appcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: #0c0c0c;
+}
+
+.Appcontent {
+    width: 80%;
+    height: 100%;
+}
+
+.Appsidebar {
+    position: sticky;
+    margin-top: 64px;
+    width: 20%;
+    height: 93vh;
+    background-color: #0c0c0c;
+    overflow-y: auto;
+}
+
+/* Add any other styling as needed */
