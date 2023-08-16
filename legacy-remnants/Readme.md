@@ -1,4 +1,4 @@
-
+## This repo is being moved to NEXT.js and TypeScript, this main branch will act like a template for convertion, main branch is next-typescript-migration, both the branches are planned to be parallely developed
 # GEC Coders Club Website
 
 Welcome to the GEC Coders Club website project! This website serves as the online platform for our coding community, providing information about our events, resources, and opportunities for aspiring developers and coding enthusiasts.
