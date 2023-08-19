@@ -1,8 +1,6 @@
 
 # GEC Coders Club Website
 
-> <h3>This Project will be moved to NextJS Framework which is been developed on `TestNextJS` branch. After successful testing the branch will be merged to the main `branch`. 
-
 Welcome to the GEC Coders Club website project! This website serves as the online platform for our coding community, providing information about our events, resources, and opportunities for aspiring developers and coding enthusiasts.
 
 ## Table of Contents
@@ -22,6 +20,8 @@ This project is build using basic [Next.js](https://nextjs.org/) architecture. T
 ![Current State of the Project](CurrentState.jpg)
 
 ### Current Plan
+
+The `main` branch of our project contains the code which is being developed using JavaScript. We also have another separate branch for our project called `TS-dev` that uses TypeScript as its main coding language, along with the Next.js framework. These two branches are being developed independently, but both have the same ultimate goal: to create the final website according to the planned design and user interface.
 
 Our project's blueprint and structural planning are currently in progress through live collaboration on Excalidraw. Excalidraw provides a dynamic environment for team members to collectively sketch out the website's layout, sections, and content flow. This collaborative process ensures that everyone's input is considered, resulting in a well-organized and comprehensive structure.
 
