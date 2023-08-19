@@ -1,6 +1,8 @@
 
 # GEC Coders Club Website
 
+> <h3>This Project will be moved to NextJS Framework which is been developed on `TestNextJS` branch. After successful testing the branch will be merged to the main `branch`. 
+
 Welcome to the GEC Coders Club website project! This website serves as the online platform for our coding community, providing information about our events, resources, and opportunities for aspiring developers and coding enthusiasts.
 
 ## Table of Contents
@@ -9,7 +11,7 @@ Welcome to the GEC Coders Club website project! This website serves as the onlin
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
     - [Current Plan](#current-plan)
-  - [Setting U](#setting-up)
+  - [Setting Up](#setting-up)
   - [Contributing](#contributing)
     - [How to Contribute](#how-to-contribute)
 
