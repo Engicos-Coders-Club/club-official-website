@@ -1,6 +1,8 @@
 
 # GEC Coders Club Website
 
+> This is an ReactDev branch for vanilla React Development or to revert back from the Next.js Developement for reference or other reasons.
+
 Welcome to the GEC Coders Club website project! This website serves as the online platform for our coding community, providing information about our events, resources, and opportunities for aspiring developers and coding enthusiasts.
 
 ## Table of Contents
@@ -9,7 +11,7 @@ Welcome to the GEC Coders Club website project! This website serves as the onlin
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
     - [Current Plan](#current-plan)
-  - [Setting U](#setting-up)
+  - [Setting Up](#setting-up)
   - [Contributing](#contributing)
     - [How to Contribute](#how-to-contribute)
 
