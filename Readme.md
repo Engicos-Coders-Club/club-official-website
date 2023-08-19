@@ -53,7 +53,7 @@ Following steps will guide you on how to setup the project on your own machine:
 
 04. Run the project : 
   ```bash 
-  npm start
+  npm run dev
   ```
 
 ## Contributing
