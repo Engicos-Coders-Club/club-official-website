@@ -9,8 +9,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
+          <code className={styles.code}>Hello Coders </code>
         </p>
         <div>
           <Link href="/">
