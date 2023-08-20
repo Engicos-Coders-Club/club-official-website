@@ -1,6 +1,6 @@
 
-import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css"
+import Image from "next/image";
 
 const Footer = () => {
 
@@ -14,7 +14,7 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           made with love ♥ at{" "}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+          <Image src="/vercel.svg" width={88} height={44} alt="Vercel" className={styles.logo} />
         </a>
       </div>
     </footer>
