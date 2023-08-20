@@ -18,7 +18,7 @@ export default function Home() {
           >
             By{' '}
             <Image
-              src="/logo.jpg"
+              src="/logo.svg"
               alt="GEC Coders Club Logo"
               className={styles.gecLogo}
               width={100}

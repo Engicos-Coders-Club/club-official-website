@@ -16,7 +16,7 @@ export default function Home() {
           <Link href="/">
             By{' '}
             <Image
-              src="/logo.jpg"
+              src="/logo.svg"
               alt="GEC Coders CLub Logo"
               className={styles.gecLogo}
               width={100}
