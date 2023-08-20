@@ -4,6 +4,8 @@ import { HomepageProjectCard, HomepageProjectSection } from '../components/index
 // to open a page without reloading (why react was made in the first place)
 // https://nextjs.org/docs/app/api-reference/components/link
 import Link from 'next/link'  
+import { EventCard } from '@/components'
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -61,10 +63,32 @@ export default function Home() {
           </h2>
           <p>Foss club</p>
         </Link>
-       
-
+        
+        
       </div>
       <HomepageProjectSection/>
+      <div className='event-grid'>
+        <EventCard 
+              img={Event.src}
+              tags={["🤝 open source", "💻 coding"]}
+              date="28 aug, 2023"
+              title="Roadmap to Software Developement"
+              hosts={["Azvern Dias"]}
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+        />
+        <EventCard 
+              img={Event.src}
+              tags={["🤝 open source", "💻 coding"]}
+              date="28 aug, 2023"
+              title="Roadmap to Software Developement"
+              hosts={["Azvern Dias"]}
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+        />
+      </div>
     </main>
   )
 }
