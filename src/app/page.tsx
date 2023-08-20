@@ -4,6 +4,8 @@ import styles from './page.module.css'
 // to open a page without reloading (why react was made in the first place)
 // https://nextjs.org/docs/app/api-reference/components/link
 import Link from 'next/link'  
+import { EventCard } from '@/components'
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -61,8 +63,12 @@ export default function Home() {
           </h2>
           <p>Foss club</p>
         </Link>
-
         
+        
+      </div>
+      <div className='event-grid'>
+        <EventCard />
+        <EventCard />
       </div>
     </main>
   )
