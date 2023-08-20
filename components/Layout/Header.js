@@ -21,38 +21,46 @@ function Header({ title }) {
     <Box className={styles.header}>
       <div className={styles.appbar}>
         <div className={styles.Toolbar}>
-          <div className={`${styles.logobody} ${styles.headerColors}`}>
-            <div className={styles.headerlogo}>
-              <img src={logo.src} alt="logo" className={styles.logoimg} />
+          <Link href="/">
+            <div className={`${styles.logobody} ${styles.headerColors}`}>
+              <div className={styles.headerlogo}>
+                <img src={logo.src} alt="logo" className={styles.logoimg} />
+              </div>
+              <div className={styles.headername}>
+                GEC Coders Club
+              </div>
             </div>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              GEC Coders Club
-            </Typography>
-          </div>
-          <div className={`${styles.navbuttons} ${styles.headerColors}`}>
-            <div className={styles.navitem}>
-              <Link href="/" className={styles.navlink}>
-                Home
-              </Link>
+          </Link>
+          <div className={styles.headerbt}>
+            <div className={`${styles.navbuttons} ${styles.headerColors}`}>
+              <div className={styles.navitem}>
+                <Link href="/" className={styles.navlink}>
+                  Home
+                </Link>
+              </div>
+              <div className={styles.navitem}>
+                <Link href="/Events" className={styles.navlink}>
+                  Events
+                </Link>
+              </div>
+              <div className={styles.navitem}>
+                <Link href="/FOSS" className={styles.navlink}>
+                  FOSS
+                </Link>
+              </div>
+              <div className={styles.navitem}>
+                <Link href="/contactus" className={styles.navlink}>
+                  Contact Us
+                </Link>
+              </div>
             </div>
-            <div className={styles.navitem}>
-              <Link href="/Events" className={styles.navlink}>
-                Events
-              </Link>
+            <div className={`${styles.themetoggle} ${styles.headerColors}`}>
+              <img
+                src={themelogo.src}
+                alt="logo"
+                className={styles.themeicon}
+              />
             </div>
-            <div className={styles.navitem}>
-              <Link href="/FOSS" className={styles.navlink}>
-                FOSS
-              </Link>
-            </div>
-            <div className={styles.navitem}>
-              <Link href="/contactus" className={styles.navlink}>
-                Contact Us
-              </Link>
-            </div>
-          </div>
-          <div className={`${styles.themetoggle} ${styles.headerColors}`}>
-            <img src={themelogo.src} alt="logo" className={styles.themeicon} />
           </div>
         </div>
       </div>
