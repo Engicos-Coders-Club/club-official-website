@@ -1,8 +1,45 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-test commit//
-## Getting Started
 
-First, run the development server:
+## Getting Started
+Make sure you have [node js](https://nodejs.org/en/download) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed 
+
+You can use [bun](https://bun.sh/docs/installation) (only for Linux and MacOS users) too I've set the enviroment up for it too
+
+Install typescript
+
+cloning and installing this repo should install typescript locally but if you wish to install it globally run
+
+```bash
+npm install -g typescript 
+```
+
+
+Clone this repo and switch to this branch (next-ts)
+
+Clone:
+```bash
+git clone https://github.com/Engicos-Coders-Club/club-official-website.git
+```
+
+then switch branch 
+
+Switch to next-ts:
+```bash
+git checkout next-ts
+```
+
+once switched, install the necessary packages by using this command
+
+Install commands:
+```bash
+npm install 
+```
+or 
+```bash
+npm i
+```
+
+Then run the development server:
 
 ```bash
 npm run dev
