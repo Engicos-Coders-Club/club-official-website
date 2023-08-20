@@ -210,8 +210,8 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
+  .gecLogo {
+    border-radius: var(--border-radius);
   }
 
   .logo {

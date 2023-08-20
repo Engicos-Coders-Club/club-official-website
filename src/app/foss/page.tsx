@@ -20,11 +20,11 @@ export default function Home() {
           >
             By{' '}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
+              src="/logo.jpg"
+              alt="GEC Coders Club Logo"
+              className={styles.gecLogo}
               width={100}
-              height={24}
+              height={100}
               priority
             />
           </a>

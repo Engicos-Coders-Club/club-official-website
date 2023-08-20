@@ -13,18 +13,14 @@ export default function Home() {
           <code className={styles.code}>app/page.tsx</code>
         </p>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a>
             By{' '}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
+              src="/logo.jpg"
+              alt="GEC Coders CLub Logo"
+              className={styles.gecLogo}
               width={100}
-              height={24}
+              height={100}
               priority
             />
           </a>
@@ -46,7 +42,8 @@ export default function Home() {
         <Link
           className={styles.card}
           href="/foss"
-          >
+          
+        >
           
           <h2>
             Foss <span>-&gt;</span>
