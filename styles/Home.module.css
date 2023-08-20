@@ -199,10 +199,9 @@
   background-color: #400777;
   border-radius: 10px;
   display: flex;
-  height: 3em;
+  height: 4em;
   align-items: center;
   border-radius: 2em;
-  padding-inline: 1em;
 }
 
 .headerColors{
@@ -222,6 +221,7 @@
 .logoimg {
   width: 42px;
   border-radius: 2em;
+  margin-inline: 1em;
 }
 
 
@@ -231,7 +231,7 @@
   justify-content: flex-end;
   background-color: #400777;
   border-radius: 30px;
-  height: 3em;
+  height: 4em;
 }
 
 .navitem {
@@ -253,7 +253,14 @@
 .themetoggle{
   background-color: #400777;
   border-radius: 2em;
-  height: 3em;
+  height: 4em;
+}
+
+.themeicon{
+  border-radius: 2em;
+  position: relative;
+  margin-top: 0.6em;
+  height: 42px;
 }
 
 .user-menu {

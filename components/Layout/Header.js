@@ -11,6 +11,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
 import logo from "../../public/logo.jpg"
+import themelogo from "../../public/themeicon.png"
 
 // import "./Header.css";
 
@@ -50,8 +51,8 @@ function Header({ title }) {
               </Link>
             </div>
           </div>
-          <div className={styles.themetoggle}>
-            <img src={logo} alt="logo" className={styles.logoimg} />
+          <div className={`${styles.themetoggle} ${styles.headerColors}`}>
+            <img src={themelogo.src} alt="logo" className={styles.themeicon} />
           </div>
         </div>
       </div>
