@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+<<<<<<< HEAD
     "lint": "next lint",
+=======
+>>>>>>> b9ce10d335ea58c706025f2abbad4e308b336247
     "transpile": "tsc -noEmit false"
   },
   "dependencies": {
