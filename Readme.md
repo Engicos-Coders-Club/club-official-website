@@ -17,8 +17,6 @@ Welcome to the GEC Coders Club website project! This website serves as the onlin
 
 This project is build using basic [Next.js](https://nextjs.org/) architecture. The plan and prototype for the project is described on the excalidraw Live collaboration Sketch. Feel free to give you suggestion in the excalidraw plan. If you cant able to open the online collaboration link of Excalidraw plan, you can use Excalidraw extension in vscode to open and edit the plan.
 
-🖌️ Design Link: [Figma](https://www.figma.com/file/NgAJI0njrDA1ZKtPykmqPZ/Coders'-Club%3A-Website?type=design&node-id=7%3A2&mode=design&t=EoajAN7gDnKzAiBh-1)
-
 ## Current Plan
 
 <h3>Two branch Approach</h3>
@@ -29,7 +27,9 @@ The `main` branch of our project contains the code which is being developed usin
 
 Our project's blueprint and structural planning are currently in progress through live collaboration on Excalidraw. Excalidraw provides a dynamic environment for team members to collectively sketch out the website's layout, sections, and content flow. This collaborative process ensures that everyone's input is considered, resulting in a well-organized and comprehensive structure.
 
-Link for the online collaboration plan : [Excalidraw wireframe](https://excalidraw.com/#room=18699433c225176ff560,yPnaQIh4pP0gF8QMUxQQEg)
+✏ Wireframe and planning : [Excalidraw wireframe](https://excalidraw.com/#room=18699433c225176ff560,yPnaQIh4pP0gF8QMUxQQEg)
+
+🖌️ Design Link: [Figma](https://www.figma.com/file/NgAJI0njrDA1ZKtPykmqPZ/Coders'-Club%3A-Website?type=design&node-id=7%3A2&mode=design&t=EoajAN7gDnKzAiBh-1)
 
 In future for UI desings suggestions and UI planing we can move to more efficient and feature reach tools to have proper and detailed plan and to have seamingless collaboration and exchange of ideas. Any suggestions for the same will be highly appreciated.
 
