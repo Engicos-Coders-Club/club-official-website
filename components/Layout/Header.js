@@ -10,54 +10,51 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
-import logo from "../../public/logo.svg"
+import logo from "../../public/logo.jpg"
 
 // import "./Header.css";
 
 function Header({ title }) {
 
   return (
-    <Box sx={{ flexGrow: 1 }} className={styles.header}>
-      <AppBar position="static" className={styles.appbar}>
-        <Toolbar className={styles.Toolbar}>
-          <div className={styles.headerlogo}>
+    <Box className={styles.header}>
+      <div className={styles.appbar}>
+        <div className={styles.Toolbar}>
+          <div className={`${styles.logobody} ${styles.headerColors}`}>
+            <div className={styles.headerlogo}>
+              <img src={logo.src} alt="logo" className={styles.logoimg} />
+            </div>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              GEC Coders Club
+            </Typography>
+          </div>
+          <div className={`${styles.navbuttons} ${styles.headerColors}`}>
+            <div className={styles.navitem}>
+              <Link href="/" className={styles.navlink}>
+                Home
+              </Link>
+            </div>
+            <div className={styles.navitem}>
+              <Link href="/Events" className={styles.navlink}>
+                Events
+              </Link>
+            </div>
+            <div className={styles.navitem}>
+              <Link href="/FOSS" className={styles.navlink}>
+                FOSS
+              </Link>
+            </div>
+            <div className={styles.navitem}>
+              <Link href="/contactus" className={styles.navlink}>
+                Contact Us
+              </Link>
+            </div>
+          </div>
+          <div className={styles.themetoggle}>
             <img src={logo} alt="logo" className={styles.logoimg} />
           </div>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            GEC Coders Club
-          </Typography>
-          <div className={styles.navbuttons}>
-            <div className={styles.navitem}>
-              <Typography variant="h6" component="div">
-                <Link href="/" className={styles.navlink}>
-                  Home
-                </Link>
-              </Typography>
-            </div>
-            <div className={styles.navitem}>
-              <Typography variant="h6" component="div">
-                <Link href="/Events" className={styles.navlink}>
-                  Events
-                </Link>
-              </Typography>
-            </div>
-            <div className={styles.navitem}>
-              <Typography variant="h6" component="div">
-                <Link href="/FOSS" className={styles.navlink}>
-                  FOSS
-                </Link>
-              </Typography>
-            </div>
-            <div className={styles.navitem}>
-              <Typography variant="h6" component="div">
-                <Link href="/contactus" className={styles.navlink}>
-                  Contact Us
-                </Link>
-              </Typography>
-            </div>
-          </div>
-        </Toolbar>
-      </AppBar>
+        </div>
+      </div>
     </Box>
   );
 }

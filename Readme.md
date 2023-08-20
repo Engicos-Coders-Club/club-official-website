@@ -22,7 +22,7 @@ This project is build using basic [Next.js](https://nextjs.org/) architecture. T
 
 <h3>Two branch Approach</h3>
 
-The `main` branch of our project contains the code which is being developed using JavaScript. We also have another separate branch for our project called `TS-dev` that uses TypeScript as its main coding language, along with the Next.js framework. These two branches are being developed independently, but both have the same ultimate goal: to create the final website according to the planned design and user interface.
+The `main` branch of our project contains the code which is being developed using JavaScript. We also have another separate branch for our project called `next-ts` that uses TypeScript as its main coding language, along with the Next.js framework. These two branches are being developed independently, but both have the same ultimate goal: to create the final website according to the planned design and user interface.
 
 <h3>Wireframe</h3>
 

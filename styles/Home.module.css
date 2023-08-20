@@ -61,7 +61,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: darkmagenta;
+  background-color: #31055B;
   justify-content: space-between;
 }
 
@@ -74,24 +74,6 @@
 .title a:focus,
 .title a:active {
   text-decoration: underline;
-}
-
-.header{
-  background-color: blue;
-  width: 100vw;
-  height: 3em;
-  border-radius: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 1em;
-  color: aliceblue;
-}
-
-.HeaderBody{
-  width: 100vw;
-  display: flex;
-  border-radius: 44px;
 }
 
 .homebody{
@@ -177,18 +159,57 @@
 /* Header css mine */
 
 .header {
-  /* background-color: rgb(0, 0, 0); */
+  width: 100vw;
+  font-size: 1em;
+  color: aliceblue;
   margin: 10px;
+}
+
+.HeaderBody {
+  width: 100vw;
+  display: flex;
+  border-radius: 44px;
 }
 
 .appbar {
   border-radius: 25px;
   display: flow;
+  position: sticky;
 }
 
-.toolbar {
-  background-color: rgba(13, 62, 102, 0.075);
+.Toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-height: 56px;
+}
 
+.logobody {
+  background-color: #400777;
+  border-radius: 10px;
+  display: flex;
+  height: 3em;
+  align-items: center;
+  border-radius: 2em;
+  padding-inline: 1em;
+}
+
+.headerColors{
+  background-color: #400777;
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
 .logo {
@@ -199,7 +220,8 @@
 }
 
 .logoimg {
-
+  width: 42px;
+  border-radius: 2em;
 }
 
 
@@ -207,23 +229,31 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  background-color: #400777;
+  border-radius: 30px;
+  height: 3em;
 }
 
 .navitem {
-  margin-left: 20px;
+  padding-inline: 1em;
 }
 
 .navlink {
   color: #fff;
-  margin-left: 20px;
-  padding-right: 120px;
+  padding-inline: 2em;
   text-decoration: none;
   font-weight: bold;
-
+  font-size: larger;
 }
 
 .nav-link:hover {
   color: #00e676;
+}
+
+.themetoggle{
+  background-color: #400777;
+  border-radius: 2em;
+  height: 3em;
 }
 
 .user-menu {
