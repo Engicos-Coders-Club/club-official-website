@@ -211,8 +211,8 @@
 
 @media (prefers-color-scheme: dark) {
   .gecLogo {
-    background-color: white;
-    border-radius: var(--border-radius);
+    background: white;
+    
   }
 
   .logo {
