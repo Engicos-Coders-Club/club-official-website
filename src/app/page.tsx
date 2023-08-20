@@ -9,7 +9,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          <code className={styles.code}>Hello Coders </code>
+          <code className={styles.code}>Hello Coders</code>
         </p>
         <div>
           <Link href="/">
