@@ -15,10 +15,10 @@ export default function Home() {
       <div className={styles.HeaderBody}>
         <Header />
       </div>
-      
+
       <div className={styles.homebody}>
         <h1 className={styles.title}>
-          Read <Link href="/FOSS">FOSS!</Link>
+          Read <Link href="https://nextjs.org">next JS!</Link>
         </h1>
 
         <p className={styles.description}>

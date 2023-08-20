@@ -8,7 +8,7 @@ Welcome to the GEC Coders Club website project! This website serves as the onlin
 - [GEC Coders Club Website](#gec-coders-club-website)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
-    - [Current Plan](#current-plan)
+  - [Current Plan](#current-plan)
   - [Setting Up](#setting-up)
   - [Contributing](#contributing)
     - [How to Contribute](#how-to-contribute)
@@ -17,11 +17,14 @@ Welcome to the GEC Coders Club website project! This website serves as the onlin
 
 This project is build using basic [Next.js](https://nextjs.org/) architecture. The plan and prototype for the project is described on the excalidraw Live collaboration Sketch. Feel free to give you suggestion in the excalidraw plan. If you cant able to open the online collaboration link of Excalidraw plan, you can use Excalidraw extension in vscode to open and edit the plan.
 
-![Current State of the Project](CurrentState.jpg)
 
-### Current Plan
+## Current Plan
+
+<h3>Two branch Approach</h3>
 
 The `main` branch of our project contains the code which is being developed using JavaScript. We also have another separate branch for our project called `TS-dev` that uses TypeScript as its main coding language, along with the Next.js framework. These two branches are being developed independently, but both have the same ultimate goal: to create the final website according to the planned design and user interface.
+
+<h3>Wireframe</h3>
 
 Our project's blueprint and structural planning are currently in progress through live collaboration on Excalidraw. Excalidraw provides a dynamic environment for team members to collectively sketch out the website's layout, sections, and content flow. This collaborative process ensures that everyone's input is considered, resulting in a well-organized and comprehensive structure.
 
@@ -29,8 +32,9 @@ Link for the online collaboration plan : [Excalidraw wireframe](https://excalidr
 
 In future for UI desings suggestions and UI planing we can move to more efficient and feature reach tools to have proper and detailed plan and to have seamingless collaboration and exchange of ideas. Any suggestions for the same will be highly appreciated.
 
-We understand that collaboration and design are iterative processes. As we progress, we'll continuously seek your feedback and input to refine the blueprint, structure, and UI design. Our goal is to create a website that aligns with your vision and effectively communicates your message to your audience.
+<h3>Present State</h3>
 
+![Current State of the Project](CurrentState.jpg)
 
 ## Setting Up
 
@@ -77,3 +81,5 @@ git commit -m 'Add new feature'
 git push origin my-feature
 ```
 5. Submit a **[Pull Request](https://github.com/Engicos-Coders-Club/club-official-website/pulls)**.
+
+We understand that collaboration and design are iterative processes. As we progress, we'll continuously seek your feedback and input to refine the blueprint, structure, and UI design. Our goal is to create a website that aligns with your vision and effectively communicates your message to your audience.
