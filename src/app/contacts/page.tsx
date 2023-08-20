@@ -10,16 +10,14 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          <code className={styles.code}>Hello World</code>
+          <code className={styles.code}>Contacts</code>
         </p>
         <div>
-          <Link
-            href="/"
-          >
+          <Link href="/">
             By{' '}
             <Image
               src="/logo.jpg"
-              alt="GEC Coders Club Logo"
+              alt="GEC Coders CLub Logo"
               className={styles.gecLogo}
               width={100}
               height={100}
@@ -51,7 +49,17 @@ export default function Home() {
           </h2>
           <p>Home page</p>
         </Link>
-
+        <a
+          href="https://linktr.ee/codersclub"
+          className={styles.card}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2>
+            Linktree <span>-&gt;</span>
+          </h2>
+          <p>Find all our Links &nbsp;</p>
+        </a>
       </div>
     </main>
   )

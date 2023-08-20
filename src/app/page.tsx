@@ -13,7 +13,7 @@ export default function Home() {
           <code className={styles.code}>app/page.tsx</code>
         </p>
         <div>
-          <a>
+          <Link href="/">
             By{' '}
             <Image
               src="/logo.jpg"
@@ -23,7 +23,7 @@ export default function Home() {
               height={100}
               priority
             />
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -39,10 +39,22 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
+      <Link
+          className={styles.card}
+          href="/contacts"
+
+        >
+          
+          <h2>
+            Contacts <span>-&gt;</span>
+          </h2>
+          <p>Reach us</p>
+        </Link>
+        
         <Link
           className={styles.card}
           href="/foss"
-          
+
         >
           
           <h2>
@@ -51,16 +63,7 @@ export default function Home() {
           <p>Foss club</p>
         </Link>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+        
 
         <a
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
