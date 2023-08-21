@@ -12,7 +12,7 @@
 
 .event-card:hover{
     overflow: hidden;
-    transform: translateY(-10px);
+    transform: translateY(-8px);
 }
 
 .event-card-img-container{
@@ -49,7 +49,7 @@
 }
 
 .event-card-tag {
-    background: var(--dark-bg-secondary);
+    background: var(--light-bg-secondary);
     color: var(--light-text);
     font-size: 0.7rem;
     padding: 5px 12px;
@@ -82,11 +82,17 @@
     margin-top: 0.8rem;
     opacity: 0.95;
     font-size: 1rem;
-    max-height: 95px;
-    overflow: hidden;
     text-overflow: ellipsis;
     transition: all 0.5s;
     color: var(--light-text);
+    overflow: hidden;
+    max-height: 95px;
+}
+
+.event-card-description-full{
+    -webkit-line-clamp: initial;
+    height: auto;
+    max-height: 500px;
 }
 
 #event-card-readmore {
@@ -94,7 +100,7 @@
     width: 0rem;
 }
 
-#event-card-readmore + label {
+.event-card-readmore {
     display: inline-block;
     width: 100%;
     margin-top: 0rem;
@@ -107,20 +113,22 @@
     color: var(--light-text);
 }
 
-#event-card-readmore + label:hover {
+.event-card-readmore > span {
+    font-size: 0.75rem;
+}
+
+.event-card-readmore:hover {
     opacity:1;
 }
 
-
-p:has(+ #event-card-readmore:checked) {
-    height:auto;
-    max-height:500px;
-}
-
-html.dark  #event-card-readmore + label,
+html.dark  .event-card-readmore,
 html.dark  .event-card-description,
 html.dark  .event-card-title,
 html.dark  .event-card-date,
 html.dark  .event-card-tag {
     color: var(--dark-text) !important;
+}
+
+html.dark  .event-card-tag {
+    background: var(--dark-bg-secondary);
 }

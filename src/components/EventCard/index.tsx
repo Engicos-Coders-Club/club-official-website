@@ -1,9 +1,26 @@
 "use client"
 
-import React from 'react'
-import "./index.css"
+import { useState } from 'react'
 import Image from 'next/image'
+import "./index.css"
 
+/*
+    Sample Usage
+
+    <EventCard 
+          img={Event.src}
+          tags={["🤝 open source", "💻 coding"]}
+          date="28 aug, 2023"
+          title="Roadmap to Software Developement"
+          hosts={["Azvern Dias"]}
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+    />
+
+    To be used in grid or flex layout
+
+*/
 
 interface EventCardProps  {
     img: string;
@@ -16,6 +33,8 @@ interface EventCardProps  {
 
 //the component defaults to light mode styles, for dark mode, html tag must have 'dark' the className
 function EventCard({ img, tags, date, title, hosts, description }: EventCardProps) {
+  const [showMore, setShowMore] = useState(false)
+
   return (
     <div className='event-card'> 
         <div className='event-card-img-container'>
@@ -40,9 +59,10 @@ function EventCard({ img, tags, date, title, hosts, description }: EventCardProp
                 <p className='event-card-hosts'>
                     { hosts.map((host,i)=>(<span key={i}>{host}</span>)) }
                 </p>
-                <p className='event-card-description'>{description}</p>
-                <input type="checkbox" id="event-card-readmore"/>
-                <label htmlFor="event-card-readmore">read more</label>
+                <div onClick={()=>setShowMore((prev)=>!prev)}>
+                    <p className={`event-card-description ${showMore && "event-card-description-full"}`}>{description}</p>
+                    <p className='event-card-readmore'>{showMore ? "read less " : "read more "}<span>{showMore ? "↑"  : "↓"}</span></p>
+                </div>
             </div>
         </div>
     </div>
