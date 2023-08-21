@@ -4,33 +4,43 @@ import React from 'react'
 import "./index.css"
 import Image from 'next/image'
 
-function EventCard() {
+
+interface EventCardProps  {
+    img: string;
+    tags: string[];
+    date: string;
+    title: string;
+    hosts: string[];
+    description: string;
+}
+
+//the component defaults to light mode styles, for dark mode, html tag must have 'dark' the className
+function EventCard({ img, tags, date, title, hosts, description }: EventCardProps) {
   return (
     <div className='event-card'> 
-        <Image 
-            loader={({src})=>src}
-            src={`https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
-            width={0}
-            height={300}
-            alt="a still from the event"
-            className='event-card-img'
-        />
+        <div className='event-card-img-container'>
+            <Image 
+                loader={({src})=>src}
+                src={img}
+                width={0}
+                height={300}
+                alt="a still from the event"
+                className='event-card-img'
+            />
+        </div>
         <div className='event-card-content'>
             <div className='event-card-meta'>
                 <div>
-                    <div className='event-card-tag'>🤝 open source</div>
-                    <div className='event-card-tag'>💻 coding</div>
+                    { tags.map((tag,i)=>(<div className='event-card-tag' key={i}>{tag}</div>)) }
                 </div>
-                <p className='event-card-date'>28 aug, 2023</p>
+                <p className='event-card-date'>{date}</p>
             </div>
             <div>
-                <p className='event-card-title'>Roadmap to Software Developement</p>
-                <p className='event-card-hosts'>Azvern Dias</p>
-                <p className='event-card-description'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                <p className='event-card-title'>{title}</p>
+                <p className='event-card-hosts'>
+                    { hosts.map((host,i)=>(<span key={i}>{host}</span>)) }
                 </p>
+                <p className='event-card-description'>{description}</p>
                 <input type="checkbox" id="event-card-readmore"/>
                 <label htmlFor="event-card-readmore">read more</label>
             </div>
