@@ -1,3 +1,3 @@
 import HomepageProjectCard  from "./HomepageProjectCard/index";
-
-export { HomepageProjectCard };
+import { TestComponent } from "./TestComponent/index";
+export { HomepageProjectCard, TestComponent };
