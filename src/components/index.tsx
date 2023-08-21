@@ -3,5 +3,3 @@ import { TestComponent } from "./TestComponent/index";
 import HomepageProjectSection from "./HomepageProjectSection/index"
 
 export { HomepageProjectCard, TestComponent, HomepageProjectSection };
-
-export { EventCard } from "./EventCard";

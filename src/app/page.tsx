@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-
+import { HomepageProjectCard, HomepageProjectSection } from '../components/index'
 // to open a page without reloading (why react was made in the first place)
 // https://nextjs.org/docs/app/api-reference/components/link
 import Link from 'next/link'  
@@ -63,10 +63,10 @@ export default function Home() {
           </h2>
           <p>Foss club</p>
         </Link>
-        
-        
+       
+
       </div>
-      
+      <HomepageProjectSection/>
     </main>
   )
 }
