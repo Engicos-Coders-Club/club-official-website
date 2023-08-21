@@ -2,22 +2,29 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  padding: 1px;
+  padding: 0px;
   border-radius: 5px;
   transition: border-radius 0.3s;
   width: 300px;
   margin: 10px;
   text-align: center;
+  overflow: hidden;
 }
+.homepage-project-card:hover .card-image {
+  border-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+}
+
 
 .homepage-project-card:hover {
   border-radius: 15px;
-}
+  }
 
 .card-image {
   width: 100%;
   background-color: #ddd;
-  
 }
 
 .card-heading {
