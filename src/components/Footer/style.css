@@ -1,0 +1,34 @@
+ul{
+    list-style-type: none;
+}
+
+.Footer{
+    width: 100vw;
+    padding: 5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-nav{
+    text-align: right;
+}
+
+@media screen and (min-width: 600px){
+    .Footer{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+    }
+    .copyright-contact-love{
+	grid-column: 1 / 3;
+    }
+}
+
+.copyright-contact-love{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.copyright-contact-love>div{
+    flex: max-content 1;
+}

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import { HomepageProjectCard } from '../components/index'
+import { HomepageProjectCard, Footer } from '../components/index'
+
 // to open a page without reloading (why react was made in the first place)
 // https://nextjs.org/docs/app/api-reference/components/link
 import Link from 'next/link'  
@@ -64,6 +65,7 @@ export default function Home() {
         <HomepageProjectCard heading='Projects' description='Projects lolz'/>
         
       </div>
+      <Footer />
     </main>
   )
 }
