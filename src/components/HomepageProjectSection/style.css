@@ -1,0 +1,44 @@
+.HomepageProjectSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .section-header {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 15px;
+    color: white;
+    text-align: left;
+    align-self: flex-start;
+  }
+  
+  .section-content {
+    display: flex;
+  }
+  
+  .view-more-button {
+    font-size: 1rem;
+    margin: 0;
+    padding: 15px;
+    color: white;
+    text-align: right;
+    align-self: flex-start; /* Updated */
+    text-decoration: underline; /* Added */
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative; /* Added */
+    margin-top: 10px; /* Added margin-top to create space below the header */
+  }
+  
+
+  
+  .view-more-button span {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .view-more-button:hover span {
+    transform: translateX(5px); /* Move the arrow to the right on hover */
+  }
