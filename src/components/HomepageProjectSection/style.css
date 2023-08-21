@@ -24,7 +24,7 @@
     padding: 15px;
     color: white;
     text-align: right;
-    align-self: flex-start; /* Updated */
+    align-self: flex-end; /* Updated */
     text-decoration: underline; /* Added */
     border: 1px solid black;
     border-radius: 5px;
