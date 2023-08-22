@@ -17,4 +17,4 @@ const HomepageProjectSection: React.FC = () => {
     );
 };
 
-export default HomepageProjectSection;
+export { HomepageProjectSection };
