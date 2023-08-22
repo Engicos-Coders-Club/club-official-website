@@ -1,7 +1,7 @@
-export { HomepageProjectCard } from "./HomepageProjectCard/index";
+export { HomepageProjectCard } from "./HomepageProjectCard";
 
-export { TestComponent } from "./TestComponent/index";
+export { TestComponent } from "./TestComponent";
 
-export { HomepageProjectSection } from "./HomepageProjectSection/index"
+export { HomepageProjectSection } from "./HomepageProjectSection"
 
 export { EventCard } from "./EventCard";
