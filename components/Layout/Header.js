@@ -1,19 +1,15 @@
-import { useRouter } from "next/router";
-import React, { useState } from "react";
+
+import React from "react";
 import Link from "next/link";
 import styles from "../../styles/Home.module.css";
 import Image from "next/image";
 
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 
 // import "./Header.css";
 
 function Header({ title }) {
   return (
-    <Box className={styles.header}>
+    <div className={styles.header}>
       <div className={styles.appbar}>
         <div className={styles.Toolbar}>
           <Link href="/">
@@ -59,7 +55,7 @@ function Header({ title }) {
           </div>
         </div>
       </div>
-    </Box>
+    </div>
   );
 }
 
