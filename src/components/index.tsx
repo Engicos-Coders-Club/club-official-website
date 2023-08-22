@@ -1,7 +1,7 @@
-import HomepageProjectCard  from "./HomepageProjectCard/index";
-import { TestComponent } from "./TestComponent/index";
-import HomepageProjectSection from "./HomepageProjectSection/index"
+export HomepageProjectCard  from "./HomepageProjectCard/index";
 
-export { HomepageProjectCard, TestComponent, HomepageProjectSection };
+export { TestComponent } from "./TestComponent/index";
+
+export { HomepageProjectSection } from "./HomepageProjectSection/index"
 
 export { EventCard } from "./EventCard";

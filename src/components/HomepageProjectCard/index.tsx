@@ -1,4 +1,3 @@
-import React from 'react';
 import './style.css';
 import Image from 'next/image';
 import placeholderImag from '../../../public/logo.jpg';
@@ -19,4 +18,4 @@ const HomepageProjectCard: React.FC<HomepageProjectCardProps> = ({ heading, desc
   );
 };
 
-export default HomepageProjectCard;
+export { HomepageProjectCard};
