@@ -1,4 +1,4 @@
-import HomepageProjectCard from '../HomepageProjectCard';
+import { HomepageProjectCard } from '../HomepageProjectCard';
 import './style.css';
 
 const HomepageProjectSection: React.FC = () => {

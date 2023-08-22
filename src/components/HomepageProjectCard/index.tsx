@@ -18,4 +18,4 @@ const HomepageProjectCard: React.FC<HomepageProjectCardProps> = ({ heading, desc
   );
 };
 
-export { HomepageProjectCard};
+export { HomepageProjectCard };
