@@ -48,7 +48,7 @@ Following steps will guide you on how to setup the project on your own machine:
 
 02. Move in the cloned repository : 
   ```bash 
-  cd coders-club-website
+  cd club-official-website
   ```
 
 03. Install the node packages : 
