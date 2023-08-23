@@ -13,6 +13,7 @@
 }
 
 .CopyableURL button{
+    font-size: 1.1em;
     background-color: #ccc;
     border: none;
     border-radius: 0 0.4em 0.4em 0 ;

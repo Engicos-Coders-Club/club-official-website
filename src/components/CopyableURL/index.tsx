@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import {FiCopy} from "react-icons/fi";
 import './style.css';
 
 const copyToClipboard = (text: string, btn: EventTarget) => {
@@ -22,7 +23,7 @@ const CopyableURL: React.FC<CopyableURLProps> = ({url, displayText, textToCopy}:
       <div>
         <a href={url} >{displayText}</a>
       </div>
-          <button onClick={(e)=>copyToClipboard(textToCopy,e.target)}>Copy</button>
+      <button onClick={(e)=>copyToClipboard(textToCopy,e.target)}> <FiCopy/> </button>
     </div>
   );
 };
