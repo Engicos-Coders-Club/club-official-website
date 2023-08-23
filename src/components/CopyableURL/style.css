@@ -1,0 +1,30 @@
+.CopyableURL{
+    display: flex;
+
+    font-weight: normal;
+    text-transform: none;
+    border: 1px solid #e0e0e0 ;
+    border-radius: 0.4em;
+    max-width: max-content;
+}
+
+.CopyableURL>*{
+    padding: 0.75em;
+}
+
+.CopyableURL button{
+    background-color: #ccc;
+    border: none;
+    border-radius: 0 0.4em 0.4em 0 ;
+}
+
+.CopyableURL button:hover,
+.CopyableURL button:focus{
+    background-color: #aaa;
+    transition: 0.4s;
+}
+
+.CopyableURL button.active{
+    background-color: #00b500;
+    color: white;
+}
