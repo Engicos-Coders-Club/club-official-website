@@ -1,22 +1,16 @@
 'use client';
 
 import React from 'react';
+import { BsGithub, BsLinkedin, BsInstagram, BsDiscord, BsYoutube } from "react-icons/bs";
 import './style.css';
-import Image from 'next/image';
-import placeholderImag from '../../../public/logo.jpg';
-
-{/* TODO: Separate into another component */}    
-const copyFun = () => {
-    navigator.clipboard.writeText('codersclub.gec@gmail.com')
-}
+import CopyableURL from '../CopyableURL';
 
 const Footer: React.FC = () => {
   return (
     <footer className="Footer">
       <div className="reach-out-to-us">
-        <p>Reach out to us</p>
-        <a href="mailto:codersclub.gec@gmail.com">codersclub.gec@gmail.com</a>
-        <button onClick={copyFun}>Copy</button>
+        <p className="reach-out-to-us-message">Reach out to us</p>
+        <CopyableURL url="mailto:codersclub.gec@gmail.com" displayText="codersclub.gec@gmail.com" textToCopy="codersclub.gec@gmail.com" />
       </div>
       <div className="footer-nav">
         <ul>
@@ -33,16 +27,15 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer-contact-icons" >
           <ul>
-            <li><a href="https://github.com/Engicos-Coders-Club/" target="_blank">GH</a></li>
-            {/* TODO: contach links */}          
-            <li><a href="#" target="_blank">LI</a></li>
-            <li><a href="#" target="_blank">IG</a></li>
-            <li><a href="#" target="_blank">Discord</a></li>
-            <li><a href="#" target="_blank">YT</a></li>
+            <li><a href="https://github.com/Engicos-Coders-Club/" target="_blank"> <BsGithub/> </a></li>
+            <li><a href="https://www.linkedin.com/company/gec-coders-club/" target="_blank"> <BsLinkedin/> </a></li>
+            <li><a href="https://instagram.com/coders.club.engico" target="_blank"> <BsInstagram/> </a></li>
+            <li><a href="https://discord.gg/VjFgqAaGtb" target="_blank"> <BsDiscord/> </a></li>
+            <li><a href="https://www.youtube.com/channel/UCWKKdEYpHTsJy8lffp7RLUQ" target="_blank"> <BsYoutube/> </a></li>
           </ul>
         </div>
         <div className="made-with-love">
-          <p>Made with love at <a href="#">TODO??</a></p>
+          <p>Made with love &#x1F493; at <a href="#">TODO??</a></p>
         </div>
       </div>    
     </footer>
