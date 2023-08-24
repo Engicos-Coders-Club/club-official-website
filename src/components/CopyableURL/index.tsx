@@ -4,8 +4,8 @@ import React from 'react';
 import {FiCopy} from "react-icons/fi";
 import './style.css';
 
-const copyToClipboard = (text: string, btn: EventTarget) => {
-    const button=btn as HTMLElement;
+const copyToClipboard = (text: string, event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    const button=event.currentTarget as HTMLElement;
     navigator.clipboard.writeText(text);
     button.classList.add('active');
     setTimeout(()=>button.classList.remove('active'), 750);
@@ -23,7 +23,7 @@ const CopyableURL: React.FC<CopyableURLProps> = ({url, displayText, textToCopy}:
       <div>
         <a href={url} >{displayText}</a>
       </div>
-      <button onClick={(e)=>copyToClipboard(textToCopy,e.target)}> <FiCopy/> </button>
+      <button onClick={(e)=>copyToClipboard(textToCopy,e)}> <FiCopy/> </button>
     </div>
   );
 };
