@@ -14,18 +14,20 @@
 
 .CopyableURL button{
     font-size: 1.1em;
-    background-color: #ccc;
     border: none;
     border-radius: 0 0.4em 0.4em 0 ;
 }
 
 .CopyableURL button:hover,
 .CopyableURL button:focus{
-    background-color: #aaa;
+    filter: invert();
     transition: 0.4s;
 }
 
 .CopyableURL button.active{
     background-color: #00b500;
+    /* Double invert as on hover/focus it inverts,
+       so override it to get original green when active */
+    filter: invert() invert();
     color: white;
 }
