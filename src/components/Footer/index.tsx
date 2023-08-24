@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
         <div className="made-with-love">
-          <p>Made with love &#x1F493; at <a href="#">TODO??</a></p>
+          <p>Made with love &#x1F493; at <a href="https://github.com/Engicos-Coders-Club/club-official-website" target="_blank">GEC Coders&apos; Club</a></p>
         </div>
       </div>    
     </footer>

@@ -45,9 +45,8 @@
 }
 
 .footer-contact-icons>ul>li:hover{
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(128,128,128, 0.5);
 }
-
 
 .copyright-contact-love{
     display: flex;
