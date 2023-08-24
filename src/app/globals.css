@@ -87,12 +87,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: black;
 }
 
 a {
@@ -103,5 +98,21 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+
+.event-grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+  padding: 2rem 5rem;
+}
+
+@media screen and (max-width: 980px) {
+  .event-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 2rem 0rem;
   }
 }

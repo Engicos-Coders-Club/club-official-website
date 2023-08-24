@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 .homepage-project-card:hover .card-image {
-  border-radius: 13px;
+  border-radius: 25px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
  
@@ -19,7 +19,7 @@
 
 
 .homepage-project-card:hover {
-  border-radius: 15px;
+  border-radius: 26px;
   }
 
   .card-image {

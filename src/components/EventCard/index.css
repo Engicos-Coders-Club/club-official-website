@@ -1,0 +1,135 @@
+* {
+    --dark-bg-secondary: #131313;
+    --light-bg-secondary: rgb(245, 245, 245);
+    --light-text: black;
+    --dark-text: white;
+}
+
+.event-card{
+    width: 100%;
+    transition: 0.3s;
+}
+
+.event-card:hover{
+    overflow: hidden;
+    transform: translateY(-8px);
+}
+
+.event-card-img-container{
+    height: 300px;
+    overflow: hidden;
+}
+
+.event-card-img{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+.event-card-img:hover{
+    transform: scale(1.5);
+}
+
+.event-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.event-card-meta{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0rem;
+}
+
+.event-card-meta > div{
+    display: flex;
+    gap:0.5rem;
+}
+
+.event-card-tag {
+    background: var(--light-bg-secondary);
+    color: var(--light-text);
+    font-size: 0.7rem;
+    padding: 5px 12px;
+    border-radius: 50000px;
+    display: flex;
+    align-items: center;
+}
+
+.event-card-date {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    color: var(--light-text);
+}
+
+.event-card-title {
+    font-size: 1.5rem;
+    font-weight: 650;
+    color: var(--light-text);
+}
+
+.event-card-hosts {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    font-weight: 550;
+    opacity: 1;
+    color: #a74cff;
+}
+
+.event-card-description {
+    margin-top: 0.8rem;
+    opacity: 0.95;
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    transition: all 0.5s;
+    color: var(--light-text);
+    overflow: hidden;
+    max-height: 95px;
+}
+
+.event-card-description-full{
+    -webkit-line-clamp: initial;
+    height: auto;
+    max-height: 500px;
+}
+
+#event-card-readmore {
+    visibility: hidden;
+    width: 0rem;
+}
+
+.event-card-readmore {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 1rem;
+    padding-left: 0rem;
+    color: var(--light-text);
+}
+
+.event-card-readmore > span {
+    font-size: 0.75rem;
+}
+
+.event-card-readmore:hover {
+    opacity:1;
+}
+
+/* dark mode styles, enabled by default for now */
+html  .event-card-readmore,
+html  .event-card-description,
+html  .event-card-title,
+html  .event-card-date,
+html  .event-card-tag {
+    color: var(--dark-text) !important;
+}
+
+html  .event-card-tag {
+    background: var(--dark-bg-secondary);
+}

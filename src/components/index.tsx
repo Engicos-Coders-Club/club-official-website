@@ -1,5 +1,9 @@
-import HomepageProjectCard  from "./HomepageProjectCard/index";
-import { TestComponent } from "./TestComponent/index";
-import Footer from "./Footer/index";
+export { HomepageProjectCard } from "./HomepageProjectCard";
 
-export { HomepageProjectCard, TestComponent, Footer };
+export { TestComponent } from "./TestComponent";
+
+export { HomepageProjectSection } from "./HomepageProjectSection"
+
+export { EventCard } from "./EventCard";
+        
+export { Footer } from "./Footer";
