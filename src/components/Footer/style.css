@@ -44,8 +44,13 @@
     transition: 0.5s;
 }
 
+.footer-contact-icons svg{
+    display: block;
+}
+
 .footer-contact-icons>ul>li:hover{
     background-color: rgba(128,128,128, 0.5);
+    cursor: pointer;
 }
 
 .copyright-contact-love{
