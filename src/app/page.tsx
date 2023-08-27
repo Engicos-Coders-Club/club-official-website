@@ -64,8 +64,8 @@ export default function Home() {
           </h2>
           <p>Foss club</p>
         </Link>
-       
-
+        
+        
       </div>
       <HomepageProjectSection/>
       <div className='event-grid'>
