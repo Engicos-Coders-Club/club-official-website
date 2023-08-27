@@ -5,3 +5,5 @@ export { TestComponent } from "./TestComponent";
 export { HomepageProjectSection } from "./HomepageProjectSection"
 
 export { EventCard } from "./EventCard";
+
+export { ContactPageSection } from "./ContactPageSection";
