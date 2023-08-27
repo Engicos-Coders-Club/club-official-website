@@ -1,21 +1,27 @@
 .CopyableURL{
     display: flex;
-
+    align-items: center;
+    
     font-weight: normal;
     text-transform: none;
-    border: 1px solid #e0e0e0 ;
-    border-radius: 0.4em;
+    border: 1px solid rgba(127,127,127,0.33);
+    border-radius: 1em;
+    padding: 0.75em;
     max-width: max-content;
+    /* cursor: pointer; */
 }
 
-.CopyableURL>*{
-    padding: 0.75em;
+.CopyableURL svg{
+    display: block;
 }
 
 .CopyableURL button{
-    font-size: 1.1em;
     border: none;
-    border-radius: 0 0.4em 0.4em 0 ;
+    height: min-content;
+    padding: 0.75em;
+    margin-left: 2em;
+    border-radius: 0.75em;
+    cursor: pointer;
 }
 
 .CopyableURL button:hover,
