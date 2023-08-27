@@ -1,6 +1,7 @@
 .wwd-section { 
     position: relative;
     width: 100%;
+
 }
 
 .wwd-section-title{
@@ -52,7 +53,7 @@
     
     .wwd-card-section{
         overflow-x: auto;
-        width: 100vw;
+        width: 100%;
         gap: 2rem;
     }
     
