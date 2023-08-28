@@ -65,7 +65,17 @@ export default function Home() {
           <p>Foss club</p>
         </Link>
         
-        
+        <Link
+          className={styles.card}
+          href="/contact-page"
+
+        >
+          
+          <h2>
+            Contact <span>-&gt;</span>
+          </h2>
+          <p>Contacts Page</p>
+        </Link>
       </div>
       <HomepageProjectSection/>
       <div className='event-grid'>
