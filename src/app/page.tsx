@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-
-import { HomepageProjectSection, EventCard, Footer } from '../components'
+import { HomepageProjectSection, EventCard, WhatWeDoSection, Footer } from '../components'
 import Event from "../../public/event.webp"
 
 // to open a page without reloading (why react was made in the first place)
@@ -92,6 +91,7 @@ export default function Home() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
         />
       </div>
+      <WhatWeDoSection />
       <Footer />
     </main>
   )
