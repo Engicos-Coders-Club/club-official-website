@@ -1,0 +1,127 @@
+
+.header {
+    width: 100vw;
+    font-size: 1em;
+    color: aliceblue;
+    margin: 10px;
+}
+
+.HeaderBody {
+    width: 100vw;
+    display: flex;
+    border-radius: 44px;
+}
+
+.appbar {
+    border-radius: 25px;
+    display: flow;
+    position: sticky;
+}
+
+.Toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-height: 56px;
+}
+
+.headerColors {
+    background-color: #604f70a1;
+    -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.logobody {
+    background-color: #604f70a1;
+    border-radius: 10px;
+    display: flex;
+    height: 4em;
+    align-items: center;
+    border-radius: 2em;
+}
+
+.headername {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 1em;
+    font-size: larger;
+}
+
+.logo {
+    height: 44px;
+    width: 88px;
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+.logoimg {
+    width: 42px;
+    border-radius: 2em;
+    margin-inline: 1em;
+}
+
+.headerbt {
+    display: flex;
+}
+
+.navbuttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #604f70a1;
+    border-radius: 30px;
+    height: 4em;
+    margin-inline: 1em;
+}
+
+.navitem {}
+
+.navlink {
+    color: #fff;
+    padding-inline: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.nav-link:hover {
+    color: #00e676;
+}
+
+.themetoggle {
+    border-radius: 3em;
+    height: 4em;
+    width: 4em;
+}
+
+.themeicon {
+    border-radius: 2em;
+    position: relative;
+    margin-top: 0.6em;
+    height: 42px;
+}
+
+.user-menu {
+    margin-left: auto;
+}
+
+.user-icon {
+    color: #fff;
+}
+
+.user-icon:hover {
+    color: #00e676;
+}

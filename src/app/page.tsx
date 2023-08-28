@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import { HomepageProjectSection, EventCard} from '../components'
+import Header from '@/components/Layout/Header'
 import Event from "../../public/event.webp"
 // to open a page without reloading (why react was made in the first place)
 // https://nextjs.org/docs/app/api-reference/components/link
