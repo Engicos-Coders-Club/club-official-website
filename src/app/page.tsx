@@ -11,31 +11,14 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          <code className={styles.code}>Hello Coders</code>
-        </p>
-        <div>
-          <Link href="/">
-            By{' '}
-            <Image
-              src="/logo.svg"
-              alt="GEC Coders CLub Logo"
-              className={styles.gecLogo}
-              width={100}
-              height={100}
-              priority
-            />
-          </Link>
-        </div>
-      </div>
+
 
       <div className={styles.center}>
         <Image
           className={styles.logo}
           src="/next.svg"
           alt="Next.js Logo"
-          width={180}
+          width={280}
           height={37}
           priority
         />

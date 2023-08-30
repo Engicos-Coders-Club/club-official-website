@@ -2,6 +2,8 @@
 .header {
     width: 100vw;
     font-size: 1em;
+    position: fixed;
+    z-index: 9;
     color: aliceblue;
     margin: 10px;
 }
@@ -124,4 +126,54 @@
 
 .user-icon:hover {
     color: #00e676;
+}
+
+.dropdown-menu {
+    display: none;
+    /* Initially hidden */
+    background-color: #604f70a1;
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    /* Position below the menu icon */
+    left: 0;
+    z-index: 1;
+}
+
+/* Show the dropdown when the menu is open */
+.headerbt.open .dropdown-menu {
+    display: block;
+}
+
+.navicon{
+    /* display: none; */
+    border-radius: 1.2em;
+    margin: 0.7em;
+}
+
+
+/* Show the menu icon and hide regular navigation links for smaller screens */
+@media (max-width: 700px) {
+    .navbuttons {
+        display: none;
+    }
+
+    .themetoggle {
+        display: block;
+    }
+
+    .headerbt.open .navbuttons {
+        display: block;
+        /* Show the dropdown menu links when menu is open */
+    }
+
+    .navicon{
+        display: block;
+        border-radius: 2em;
+        position: relative;
+        margin-top: 0.6em;
+        height: 42px;
+    }
+
+    /* Add more responsive styling as needed */
 }
