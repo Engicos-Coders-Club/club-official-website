@@ -1,20 +1,22 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
   }
   
   .textSection {
-    text-align: left;
+
   }
   
-  .loremText {
+  .text {
     font-size: 16px;
+    text-align: end;
   }
   
   .buttonSection {
     margin-top: 40px;
     text-align: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
   }
   
   .title {
@@ -68,7 +70,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    background-color: #f0f0f0;
+    background-color: #000000;
     border: none;
     cursor: pointer;
   }

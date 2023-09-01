@@ -5,7 +5,7 @@ export default function ContactPage() {
   return (
     <div className={styles.container}>
       <section className={styles.textSection}>
-        <p className={styles.loremText}>Lorem ipsum dolor sit amet...</p>
+        <p className={styles.text}>Lorem ipsum dolor sit amet...</p>
       </section>
       <section className={styles.buttonSection}>
         <h2 className={styles.title}>Title</h2>
