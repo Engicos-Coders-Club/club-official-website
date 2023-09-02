@@ -3,7 +3,7 @@
     width: 100%;
     font-size: 1em;
     position: fixed;
-    z-index: 9;
+    z-index: 20;
     color: aliceblue;
     padding:1rem
 }
@@ -128,8 +128,8 @@
     
 }
 
-.menuIcon, .navbuttons, .themeIcon {
-    animation: fade 0.5s linear 0s;
+.menuIcon, .navbuttons, .smallnavbuttons ,.themeIcon {
+    animation: fade 0.3s linear 0s;
 }
 
 .logobody, .navbuttons, .themetoggle {
@@ -194,9 +194,7 @@
         display: none;
     }
 
-    .themetoggle {
-        display: block;
-    }
+    
     .headername{
         display: none;
     }

@@ -17,6 +17,15 @@ function Header() {
     setMenuOpen(!menuOpen);
   };
 
+  const toggleTheme = () => {
+    if(document.documentElement.className === "dark"){
+      document.documentElement.className = "light";
+    }
+    else{
+      document.documentElement.className = "dark";
+    }
+    setTheme((prev)=>prev==="dark" ? "light" : "dark")
+  }
   
   return (
     <div className={styles.header}>
@@ -60,7 +69,7 @@ function Header() {
             <button onClick={()=>setMenuOpen((prev)=>!prev)} key={`menu-${menuOpen}`} className={`${styles.themetoggle} ${styles.headerColors}`}>
               { menuOpen ? <VscClose className={styles.menuIcon} size={20} /> : <RxHamburgerMenu className={styles.menuIcon} size={18} />}
             </button>
-            <button key={`theme-${theme}`} onClick={()=>setTheme((prev)=>prev==="dark" ? "light" : "dark")} className={`${styles.themetoggle} ${styles.headerColors}`}>
+            <button key={`theme-${theme}`} onClick={toggleTheme} className={`${styles.themetoggle} ${styles.headerColors}`}>
               { theme === "dark" ? <BsSun className={styles.themeIcon} size={18} /> : <BsMoonStars className={styles.themeIcon} size={15} /> }
             </button>
           </div>

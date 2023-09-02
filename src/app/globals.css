@@ -91,6 +91,10 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
+  background-color: white;
+}
+
+html.dark body {
   background-color: black;
 }
 
