@@ -5,4 +5,4 @@ export { EventCard } from "./EventCard";
 export { WhatWeDoCard } from "./WhatWeDoCard";
 export { WhatWeDoSection } from "./WhatWeDoSection";
 export { Footer } from "./Footer";
-export { Navbar } from "./Navbar";
+export { Header } from "./Header";
