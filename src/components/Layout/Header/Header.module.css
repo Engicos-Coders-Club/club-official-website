@@ -1,11 +1,11 @@
 
 .header {
-    width: 100vw;
+    width: 100%;
     font-size: 1em;
     position: fixed;
     z-index: 9;
     color: aliceblue;
-    margin: 10px;
+    padding:1rem
 }
 
 .HeaderBody {
@@ -22,6 +22,7 @@
 
 .Toolbar {
     display: flex;
+    
     justify-content: space-between;
     align-items: stretch;
     position: relative;
@@ -33,8 +34,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-left: 16px;
-    padding-right: 16px;
+
     min-height: 56px;
 }
 
@@ -49,8 +49,9 @@
     background-color: #604f70a1;
     border-radius: 10px;
     display: flex;
-    height: 4em;
+    padding: 0.5rem 1rem;
     align-items: center;
+    gap:0.8rem;
     border-radius: 2em;
 }
 
@@ -59,7 +60,7 @@
     text-decoration: none;
     font-weight: bold;
     padding-right: 1em;
-    font-size: larger;
+    font-size: 1rem;
 }
 
 .logo {
@@ -70,13 +71,16 @@
 }
 
 .logoimg {
-    width: 42px;
+  
     border-radius: 2em;
-    margin-inline: 1em;
+    
 }
 
 .headerbt {
     display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
 }
 
 .navbuttons {
@@ -85,18 +89,28 @@
     justify-content: flex-end;
     background-color: #604f70a1;
     border-radius: 30px;
-    height: 4em;
+    height: 3.5rem;
     margin-inline: 1em;
 }
-
+.smallnavbuttons{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:2rem;
+    border-radius: 30px;
+    padding: 2rem;
+    margin-top: 1rem;
+    
+    background-color: #604f70;
+}
 .navitem {}
 
 .navlink {
     color: #fff;
     padding-inline: 2em;
     text-decoration: none;
-    font-weight: bold;
-    font-size: larger;
+    font-size: 1rem;
 }
 
 .nav-link:hover {
@@ -104,9 +118,31 @@
 }
 
 .themetoggle {
-    border-radius: 3em;
+    border-radius: 50%;
+    border:none;
     height: 4em;
     width: 4em;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    
+}
+
+.menuIcon, .navbuttons, .themeIcon {
+    animation: fade 0.5s linear 0s;
+}
+
+.logobody, .navbuttons, .themetoggle {
+    backdrop-filter: blur(10px);
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
 }
 
 .themeicon {
@@ -153,7 +189,7 @@
 
 
 /* Show the menu icon and hide regular navigation links for smaller screens */
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .navbuttons {
         display: none;
     }
@@ -161,10 +197,20 @@
     .themetoggle {
         display: block;
     }
-
+    .headername{
+        display: none;
+    }
     .headerbt.open .navbuttons {
         display: block;
         /* Show the dropdown menu links when menu is open */
+    }
+
+    .logobody{
+        padding: 0.5rem;
+    }
+
+    .smallnavbuttons{
+        display: flex;
     }
 
     .navicon{
