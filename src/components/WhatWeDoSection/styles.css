@@ -9,6 +9,7 @@
     text-align: right;
     padding-bottom: 4rem;
     font-weight: 500;
+    color: #000;
 }
 
 .wwd-section-title > span{
@@ -41,9 +42,17 @@
     position: absolute;
     width: 80%;
     height: 100%;
-    border: 1px solid white;
+    border: 1px solid black;
     top: -15%;
     right: 0%;
+}
+
+html.dark .wwd-section-title{
+    color: white;
+}
+
+html.dark .wwd-card-section::after{
+    border: 1px solid white;
 }
 
 @media screen and (max-width: 980px) {

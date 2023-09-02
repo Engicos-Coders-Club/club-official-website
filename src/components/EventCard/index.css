@@ -122,14 +122,14 @@
 }
 
 /* dark mode styles, enabled by default for now */
-html  .event-card-readmore,
-html  .event-card-description,
-html  .event-card-title,
-html  .event-card-date,
-html  .event-card-tag {
+html.dark  .event-card-readmore,
+html.dark  .event-card-description,
+html.dark  .event-card-title,
+html.dark  .event-card-date,
+html.dark  .event-card-tag {
     color: var(--dark-text) !important;
 }
 
-html  .event-card-tag {
+html.dark  .event-card-tag {
     background: var(--dark-bg-secondary);
 }
