@@ -73,6 +73,10 @@
   }
 }
 
+.site {
+  padding: 0rem 6rem;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -87,6 +91,10 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
+  background-color: white;
+}
+
+html.dark body {
   background-color: black;
 }
 
@@ -107,7 +115,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 4rem;
-  padding: 2rem 5rem;
+  padding: 2rem 0rem;
 }
 
 @media screen and (max-width: 980px) {
