@@ -1,3 +1,7 @@
+:root{
+  --line-color: 1px white;
+}
+
 .container {
   
   }
@@ -15,8 +19,8 @@ padding-right: 15px;
   .buttonSection {
     margin-top: 40px;
     text-align: center;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    border-top: var(--line-color);
+    border-bottom: var(--line-color);
     padding: 10px;
   }
   
