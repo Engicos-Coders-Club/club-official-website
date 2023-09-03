@@ -1,0 +1,39 @@
+.CopyableURL{
+    display: flex;
+    align-items: center;
+    
+    font-weight: normal;
+    text-transform: none;
+    border: 1px solid rgba(127,127,127,0.33);
+    border-radius: 1em;
+    padding: 0.75em;
+    max-width: max-content;
+    /* cursor: pointer; */
+}
+
+.CopyableURL svg{
+    display: block;
+}
+
+.CopyableURL button{
+    border: none;
+    height: min-content;
+    padding: 0.75em;
+    margin-left: 2em;
+    border-radius: 0.75em;
+    cursor: pointer;
+}
+
+.CopyableURL button:hover,
+.CopyableURL button:focus{
+    filter: invert();
+    transition: 0.4s;
+}
+
+.CopyableURL button.active{
+    background-color: #00b500;
+    /* Double invert as on hover/focus it inverts,
+       so override it to get original green when active */
+    filter: invert() invert();
+    color: white;
+}
