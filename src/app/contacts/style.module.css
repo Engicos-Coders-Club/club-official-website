@@ -54,6 +54,7 @@ padding-right: 15px;
   
   .addressColumn {
     flex: 2;
+    padding-left: 10px;
   }
   
   .touchColumn {
