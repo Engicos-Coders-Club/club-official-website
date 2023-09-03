@@ -1,5 +1,6 @@
 import styles from './style.module.css';
 import Image from 'next/image';
+import emailIcon from '../../../public/mail.png';
 
 export default function ContactPage() {
   return (
@@ -22,7 +23,7 @@ export default function ContactPage() {
         <div className={styles.touchColumn}>
           <h2 className={styles.touchTitle}>GET IN TOUCH</h2>
           <button className={styles.copyButton}>
-            <Image src="/email-icon.png" alt="Email" className={styles.emailIcon} width={100} height={100}/>
+            <Image src={emailIcon} alt="Email" className={styles.emailIcon} width={100} height={100}/>
             codersclub.gec@gmail.com
           </button>
         </div>
