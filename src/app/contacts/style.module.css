@@ -45,7 +45,9 @@ padding-right: 15px;
   
   .twoColumnSection {
     display: flex;
+    
     margin-top: 40px;
+    
   }
   
   .addressColumn {
@@ -53,30 +55,39 @@ padding-right: 15px;
   }
   
   .touchColumn {
+    flex-direction: column; /* Display items in a column */
+    align-items: flex-end; /* Align items to the right end */
     flex: 3;
-    text-align: center;
+    text-align: right;
+    padding-right: 15px; 
+    display: flex; /* Add this */
+    justify-content: flex-end; /* Align to the right end */
   }
   
-  .addressTitle,
-  .touchTitle {
-    font-size: 24px;
+  .addressTitle{
+    font-size: 18px;
     margin-bottom: 10px;
+  }
+  .touchTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    justify-content: flex-end; /* Align to the right end */
+    display: flex; /* Add this */
+    align-items: center; /* Add this */
   }
   
   .actualAddress {
-    text-align: left;
-    font-size: 18px;
+    font-size: 24px;
   }
   
   .copyButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: transparent;
-    padding: 10px 20px;
+    padding: 0px 0px;
     border: none;
     cursor: pointer;
-    
+    display: flex; /* Add this */
+    align-items: center; /* Add this */
+    justify-content: flex-end; /* Align to the right end */
   }
   
   .emailIcon {
