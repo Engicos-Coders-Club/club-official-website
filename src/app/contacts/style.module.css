@@ -3,7 +3,8 @@
   }
   
   .textSection {
-
+padding-top: 15px;
+padding-right: 15px;
   }
   
   .text {
@@ -16,14 +17,17 @@
     text-align: center;
     border-top: 1px solid;
     border-bottom: 1px solid;
+    padding: 10px;
   }
   
   .title {
+    padding-bottom: 10px;
     font-size: 24px;
   }
   
   .description {
     font-size: 18px;
+    padding-bottom: 15px;
   }
   
   .formButton {
@@ -72,6 +76,7 @@
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    
   }
   
   .emailIcon {
@@ -79,6 +84,10 @@
     width: 20px;
     height: 20px;
     margin-right: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
+    transition: border-radius 0.3s;
   }
   
+  .copyButton:hover .emailIcon {
+    border-radius: 5px;
+  }
