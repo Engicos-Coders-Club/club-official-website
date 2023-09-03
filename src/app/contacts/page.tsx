@@ -1,8 +1,18 @@
+'use client' ;
+import { useState } from 'react';
 import styles from './style.module.css';
 import Image from 'next/image';
 import emailIcon from '../../../public/mail.png';
+import check from '../../../public/check.png';
 
 export default function ContactPage() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyClick = async () => {
+    await navigator.clipboard.writeText('codersclub.gec@gmail.com');
+    setCopied(true);
+  };
+
   return (
     <div className={styles.container}>
       <section className={styles.textSection}>
@@ -22,8 +32,8 @@ export default function ContactPage() {
         </div>
         <div className={styles.touchColumn}>
           <h2 className={styles.touchTitle}>GET IN TOUCH</h2>
-          <button className={styles.copyButton}>
-            <Image src={emailIcon} alt="Email" className={styles.emailIcon} width={100} height={100}/>
+          <button className={styles.copyButton} onClick={handleCopyClick}>
+            <Image src={copied ? check : emailIcon} alt="Email" className={styles.emailIcon} width={100} height={100}/>
             codersclub.gec@gmail.com
           </button>
         </div>
