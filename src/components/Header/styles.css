@@ -5,7 +5,7 @@
     position: fixed;
     z-index: 20;
     color: aliceblue;
-    padding:1rem
+    padding:2rem 5rem
 }
 
 .HeaderBody {
@@ -79,7 +79,7 @@
 .headerbt {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.8rem;
 
 }
 

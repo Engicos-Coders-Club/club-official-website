@@ -8,11 +8,16 @@
 .event-card{
     width: 100%;
     transition: 0.3s;
+    margin-bottom: 4rem;
 }
 
 .event-card:hover{
     overflow: hidden;
     transform: translateY(-8px);
+}
+
+.event-card-margin{
+    padding-top: 3rem;
 }
 
 .event-card-img-container{

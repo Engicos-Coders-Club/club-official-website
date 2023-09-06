@@ -1,0 +1,33 @@
+.page-header{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 1));
+    height: 100vh;
+    width: 100vw;
+    padding: 5rem;
+    padding-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  
+  .page-header-overlay{
+    background:url("https://images.pexels.com/photos/3321789/pexels-photo-3321789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
+    background-size: cover;
+    width: 100vw;
+  }
+  
+  .page-header-title{
+    font-size: 7rem;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    
+    color: white;
+    width: fit-content;
+    padding: 0rem 1rem;
+  }
+  
+  .page-header-description{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    padding: 0rem 1rem;
+  }
+  
