@@ -1,66 +1,43 @@
-import Image from 'next/image'
-import styles from '../page.module.css'
+'use client' ;
+import { useState } from 'react';
+import styles from './style.module.css';
+import Image from 'next/image';
+import emailIcon from '../../../public/mail.png';
+import check from '../../../public/check.png';
 
-// to open a page without reloading (why react was made in the first place)
-// https://nextjs.org/docs/app/api-reference/components/link
-import Link from 'next/link'  
+export default function ContactPage() {
+  const [copied, setCopied] = useState(false);
 
-export default function Home() {
+  const handleCopyClick = async () => {
+    await navigator.clipboard.writeText('codersclub.gec@gmail.com');
+    setCopied(true);
+  };
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          <code className={styles.code}>Contacts</code>
-        </p>
-        <div>
-          <Link href="/">
-            By{' '}
-            <Image
-              src="/logo.svg"
-              alt="GEC Coders CLub Logo"
-              className={styles.gecLogo}
-              width={100}
-              height={100}
-              priority
-            />
-          </Link>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <Link
-          className={styles.card}
-          href="/"
-          >
-          
-          <h2>
-            Home <span>-&gt;</span>
-          </h2>
-          <p>Home page</p>
-        </Link>
-        <a
-          href="https://linktr.ee/codersclub"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Linktree <span>-&gt;</span>
-          </h2>
-          <p>Find all our Links &nbsp;</p>
+    <div className={styles.container}>
+      <section className={styles.textSection}>
+        <p className={styles.text}>Lorem ipsum dolor sit amet...</p>
+      </section>
+      <section className={styles.buttonSection}>
+        <h2 className={styles.title}>Title</h2>
+        <p className={styles.description}>Description</p>
+        <a href="https://docs.google.com/forms/u/3/d/e/1FAIpQLSfY24F2SeC1G7SQkKIq9GvUC5-DmIBPZfXPEH7gc096jou8ew/alreadyresponded?usp=send_form" className={styles.formButton}>
+          Fill the form <span className={styles.arrow}>&rarr;</span>
         </a>
-      </div>
-    </main>
-  )
-}
+      </section>
+      <section className={styles.twoColumnSection}>
+        <div className={styles.addressColumn}>
+          <h2 className={styles.addressTitle}>Address</h2>
+          <p className={styles.actualAddress}>123 Street, City, Country</p>
+        </div>
+        <div className={styles.touchColumn}>
+          <h2 className={styles.touchTitle}>GET IN TOUCH</h2>
+          <button className={styles.copyButton} onClick={handleCopyClick}>
+            <Image src={copied ? check : emailIcon} alt="Email" className={styles.emailIcon} width={100} height={100}/>
+            codersclub.gec@gmail.com
+          </button>
+        </div>
+      </section>
+    </div>
+  );
+};

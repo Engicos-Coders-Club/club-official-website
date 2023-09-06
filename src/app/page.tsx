@@ -11,7 +11,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
 
+
       <PageHeader title={"GEC CODERS' CLUB"} desc={"for, by & of the students."}/>
+      
       <HomepageProjectSection/>
       
       <WhatWeDoSection />
