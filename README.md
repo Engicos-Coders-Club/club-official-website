@@ -96,6 +96,21 @@ To convert tsx to jsx use:
 ```bash
 npm run transpile
 ```
+## Theming
+
+This project supports both light as well as dark theme. You should configure the components in the following sense to support both the themes:
+
+```css
+.component{
+    color:black; // always specify the light theme styles
+}
+
+html.dark .component{
+    color:white; //dark theme styles
+}
+```
+As we can see above, we declare the light theme styling by directly targeting the elements using selectors and we declare the dark theme styling by targeting the element through html.dark
+
 ## Contributing
 
 Feel free to give suggestions on any thing you like, you feel should be changed. Even with HTML and CSS knowledge you can start contributing in this project.
