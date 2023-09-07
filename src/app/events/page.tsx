@@ -63,10 +63,10 @@ function Events() {
         <PageHeader title={"EVENTS"} desc="what we did"/>
         <p className='event-page-past-events'>UPCOMING EVENTS</p>
         <div className='events-page-upcoming-events'>
-            <UpcomingEventCard img={Event.src}/>
-            <UpcomingEventCard img={Event.src}/>
-            <UpcomingEventCard img={Event.src}/>
-            <UpcomingEventCard img={Event.src}/>
+            <UpcomingEventCard img={Event.src} title='Getting Started with Programming'/>
+            <UpcomingEventCard img={Event.src} title='Getting Started with Programming'/>
+            <UpcomingEventCard img={Event.src} title='Getting Started with Programming'/>
+            <UpcomingEventCard img={Event.src} title='Getting Started with Programming'/>
         </div>
         <p className="events-page-scroll-text">Scroll ➡️</p>
        
