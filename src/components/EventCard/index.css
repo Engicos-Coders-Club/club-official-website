@@ -9,6 +9,8 @@
     width: 100%;
     transition: 0.3s;
     margin-bottom: 4rem;
+    break-inside: avoid;
+
 }
 
 .event-card:hover{
@@ -138,3 +140,11 @@ html.dark  .event-card-tag {
 html.dark  .event-card-tag {
     background: var(--dark-bg-secondary);
 }
+
+@media screen and (max-width: 980px) {
+    .event-card{
+        margin-bottom: 2rem;
+        margin-top: 0rem;
+        padding-top: 0rem;
+    }
+  }

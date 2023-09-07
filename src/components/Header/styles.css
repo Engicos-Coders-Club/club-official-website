@@ -190,6 +190,9 @@
 
 /* Show the menu icon and hide regular navigation links for smaller screens */
 @media (max-width: 900px) {
+    .header{
+        padding: 2rem;
+    }
     .navbuttons {
         display: none;
     }

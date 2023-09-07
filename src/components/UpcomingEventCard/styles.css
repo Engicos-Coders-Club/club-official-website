@@ -1,0 +1,50 @@
+.upcoming-event-card{
+    padding: 1rem;
+    background: white;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    flex-shrink: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.upcoming-event-card-img{
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.8s;
+    flex: 1;
+}
+
+.upcoming-event-card-title{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.upcoming-event-card-button{
+    width: 100%;
+    font-size: 1.1rem;
+    background: transparent;
+    color: black;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.event-card-img-container{
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 980px) {
+    .upcoming-event-card{
+        width: 100%;
+    }
+  }

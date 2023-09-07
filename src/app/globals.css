@@ -135,7 +135,9 @@ a {
 .event-collaboration{
   background:#7f34be;
   border-radius: 10px;
-  padding:2rem
+  padding:2rem;
+  white-space: pre-wrap;
+  
 }
 
 .event-collaboration > p:nth-child(1){
@@ -149,11 +151,46 @@ a {
 
 .event-collaboration > p:nth-child(2) > span{
   font-weight: 600;
+  word-break: break-all;
+}
+
+.events-page-upcoming-events{
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  align-items: start;
+  justify-content: start;
+  overflow-x: auto;
+  margin-top: 2rem;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+
+}
+
+.events-page-upcoming-events::-webkit-scrollbar{
+  background: transparent; /* Chrome/Safari/Webkit */
+  width: 0px;
+}
+
+.events-page-scroll-text{
+  color: rgba(255,255,255,0.8);
+  align-self: start;
+}
+
+.events-page-section-divider{
+  background-color: white;
+  height: 1px;
+  width: 100vw;
+  margin: 5rem 0rem;
 }
 
 @media screen and (max-width: 980px) {
   .event-grid {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    columns: 1;
     padding: 2rem 0rem;
+    gap: 0rem;
+  }
+  .site{
+    padding: 2rem;
   }
 }
