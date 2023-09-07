@@ -105,7 +105,7 @@ This project supports both light as well as dark theme. You should configure the
     color:black; // always specify the light theme styles
 }
 
-html.dark component{
+html.dark .component{
     color:white; //dark theme styles
 }
 ```
