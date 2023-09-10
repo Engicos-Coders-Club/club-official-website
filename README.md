@@ -18,7 +18,7 @@ This project is build using basic [Next.js](https://nextjs.org/) with [TypeScrip
 
 ## Updates
 
-> We have moved the next-ts branch into main. So the current project is using Next.js with TypeScript.
+We have moved the `next-ts` branch into the `main`. So the current project is using Next.js with TypeScript.
 
 ## Wireframe and Design
 
@@ -36,15 +36,15 @@ Any suggestions on the UI/UX for the website will be highly appreciated.
 
 Make sure you have [node js](https://nodejs.org/en/download) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed
 
-You can use [bun](https://bun.sh/docs/installation) (only for Linux and MacOS users) too I've set the enviroment up for it too
+You can use [bun](https://bun.sh/docs/installation) (only for Linux and MacOS users) too. We've set the environment up for it too
 
 1. Install typescript
 
-Cloning and installing this repo should install typescript locally but if you wish to install it globally run
+Cloning and installing this repo should install typescript locally but if you wish to install it globally run:
 
-    ```bash
-    npm install -g typescript
-    ```
+  ```bash
+  npm install -g typescript    
+  ```
 
 2. Clone this repo
 
@@ -124,6 +124,6 @@ git push origin my-feature
 - [Shriteen Dhamasker](https://github.com/Shriteen) - `dev`
 - [Greeshma](https://github.com/greeshma2903) - `coordinator`
 
-> NOTE
+> Note
 >
 > We understand that collaboration and design are iterative processes. As we progress, we'll continuously seek your feedback and input to refine the blueprint, structure, and UI design. Our goal is to create a website that aligns with your vision and effectively communicates your message to your audience.
