@@ -21,7 +21,10 @@ export default function ContactPage() {
       <section className={styles.buttonSection}>
         <h2 className={styles.title}>Title</h2>
         <p className={styles.description}>Description</p>
-        <a href="https://docs.google.com/forms/u/3/d/e/1FAIpQLSfY24F2SeC1G7SQkKIq9GvUC5-DmIBPZfXPEH7gc096jou8ew/alreadyresponded?usp=send_form" className={styles.formButton}>
+        <a href="https://docs.google.com/forms/u/3/d/e/1FAIpQLSfY24F2SeC1G7SQkKIq9GvUC5-DmIBPZfXPEH7gc096jou8ew/alreadyresponded?usp=send_form" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.formButton}>
           Fill the form <span className={styles.arrow}>&rarr;</span>
         </a>
       </section>
