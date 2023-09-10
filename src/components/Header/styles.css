@@ -1,0 +1,226 @@
+
+.header {
+    width: 100%;
+    font-size: 1em;
+    position: fixed;
+    z-index: 20;
+    color: aliceblue;
+    padding:2rem 5rem
+}
+
+.HeaderBody {
+    width: 100vw;
+    display: flex;
+    border-radius: 44px;
+}
+
+.appbar {
+    border-radius: 25px;
+    display: flow;
+    position: sticky;
+}
+
+.Toolbar {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    min-height: 56px;
+}
+
+.headerColors {
+    background-color: #5c0baba1;
+    -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: 0px 0.1px 4px -2px rgba(0, 0, 0, 0.05), 0px 4px 5px 0px rgba(0, 0, 0, 0.05), 0px 1px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.logobody {
+    background-color: #5c0baba1;
+    border-radius: 10px;
+    display: flex;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    gap:0.8rem;
+    border-radius: 2em;
+}
+
+.headername {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 1em;
+    font-size: 1rem;
+}
+
+.logo {
+    height: 44px;
+    width: 88px;
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+.logoimg {
+  
+    border-radius: 2em;
+    
+}
+
+.headerbt {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+}
+
+.navbuttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #604f70a1;
+    border-radius: 30px;
+    height: 3.5rem;
+    margin-inline: 1em;
+}
+.smallnavbuttons{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:2rem;
+    border-radius: 30px;
+    padding: 2rem;
+    margin-top: 1rem;
+    
+    background-color: #604f70;
+}
+.navitem {}
+
+.navlink {
+    color: #fff;
+    padding-inline: 2em;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #00e676;
+}
+
+.themetoggle {
+    border-radius: 50%;
+    border:none;
+    height: 4em;
+    width: 4em;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    
+}
+
+.menuIcon, .navbuttons, .smallnavbuttons ,.themeIcon {
+    animation: fade 0.3s linear 0s;
+}
+
+.logobody, .navbuttons, .themetoggle {
+    backdrop-filter: blur(10px);
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+.themeicon {
+    border-radius: 2em;
+    position: relative;
+    margin-top: 0.6em;
+    height: 42px;
+}
+
+.user-menu {
+    margin-left: auto;
+}
+
+.user-icon {
+    color: #fff;
+}
+
+.user-icon:hover {
+    color: #00e676;
+}
+
+.dropdown-menu {
+    display: none;
+    /* Initially hidden */
+    background-color: #604f70a1;
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    /* Position below the menu icon */
+    left: 0;
+    z-index: 1;
+}
+
+/* Show the dropdown when the menu is open */
+.headerbt.open .dropdown-menu {
+    display: block;
+}
+
+.navicon{
+    /* display: none; */
+    border-radius: 1.2em;
+    margin: 0.7em;
+}
+
+
+/* Show the menu icon and hide regular navigation links for smaller screens */
+@media (max-width: 900px) {
+    .header{
+        padding: 2rem;
+    }
+    .navbuttons {
+        display: none;
+    }
+
+    
+    .headername{
+        display: none;
+    }
+    .headerbt.open .navbuttons {
+        display: block;
+        /* Show the dropdown menu links when menu is open */
+    }
+
+    .logobody{
+        padding: 0.5rem;
+    }
+
+    .smallnavbuttons{
+        display: flex;
+    }
+
+    .navicon{
+        display: block;
+        border-radius: 2em;
+        position: relative;
+        margin-top: 0.6em;
+        height: 42px;
+    }
+
+    /* Add more responsive styling as needed */
+}

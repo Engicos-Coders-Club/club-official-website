@@ -1,0 +1,33 @@
+.wwd-card {
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    padding: 2rem;
+    flex: 0.22;
+    position: relative;
+    z-index: 10;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.wwd-card:hover{
+    border-radius: 40px;
+}
+
+.wwd-card-title{
+    font-size: 2rem;
+    text-align: right;
+    font-weight: 600;
+}
+
+.wwd-card-description{
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+@media screen and (max-width: 980px) {
+    .wwd-card{
+        min-width: 300px;
+    }
+    
+}
