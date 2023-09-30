@@ -73,10 +73,6 @@
   }
 }
 
-.site {
-  padding: 0rem 10rem;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -189,8 +185,5 @@ a {
     columns: 1;
     padding: 2rem 0rem;
     gap: 0rem;
-  }
-  .site{
-    padding: 2rem;
   }
 }
