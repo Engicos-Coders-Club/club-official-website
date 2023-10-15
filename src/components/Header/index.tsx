@@ -60,7 +60,7 @@ function Header() {
                   </Link>
                 </div>
                 <div className={`navitem`}>
-                  <Link href="/contactus" className={`navlink`}>
+                  <Link href="/contact-us" className={`navlink`}>
                     Contact Us
                   </Link>
                 </div>
