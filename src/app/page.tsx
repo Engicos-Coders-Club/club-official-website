@@ -12,7 +12,7 @@ export default function Home() {
     <main className={styles.main}>
 
 
-      <PageHeader title={"GEC CODERS' CLUB"} desc={"for, by & of the students."}/>
+      <PageHeader title={"GEC Coders' Club"} desc={"for, by & of the students"}/>
       
       <HomepageProjectSection/>
       

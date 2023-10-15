@@ -1,7 +1,7 @@
 .wwd-section { 
     position: relative;
     width: 100%;
-
+    padding: 0 8vw;
 }
 
 .wwd-section-title{
@@ -66,4 +66,7 @@ html.dark .wwd-section-title{
         gap: 2rem;
     }
     
+    .wwd-section{
+	padding: 0 2rem;
+    }
 }

@@ -1,9 +1,10 @@
 .page-header{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 1));
+    color: white;
     height: 100vh;
     width: 100vw;
-    padding: 5rem;
-    padding-bottom: 8rem;
+    padding: 4vw;
+    padding-bottom: 8vh;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -16,17 +17,18 @@
   }
   
   .page-header-title{
-    font-size: 7rem;
+    text-transform: uppercase;
+    font-size: 9vmax;
     font-weight: 900;
     letter-spacing: 0.2rem;
     
-    color: white;
     width: fit-content;
     padding: 0rem 1rem;
   }
   
   .page-header-description{
-    font-size: 4rem;
+    text-transform: capitalize;
+    font-size: 4vmax;
     margin-bottom: 1rem;
     padding: 0rem 1rem;
   }
