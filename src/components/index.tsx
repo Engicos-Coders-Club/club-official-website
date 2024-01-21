@@ -8,3 +8,4 @@ export { Footer } from "./Footer";
 export { Header } from "./Header";
 export { PageHeader } from "./PageHeader";
 export { UpcomingEventCard } from "./UpcomingEventCard";
+export {WordBelt} from "./WordBelt";

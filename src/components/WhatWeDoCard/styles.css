@@ -1,33 +1,34 @@
 .wwd-card {
     display: flex;
     flex-direction: column;
-    gap:3rem;
-    padding: 2rem;
-    flex: 0.22;
+    gap: 3rem;
+    padding: 1rem;
+    margin-inline: 1em;
+    flex: 0.32 1;
     position: relative;
     z-index: 10;
     transition: 0.5s;
     border-radius: 10px;
 }
 
-.wwd-card:hover{
+.wwd-card:hover {
     border-radius: 40px;
 }
 
-.wwd-card-title{
+.wwd-card-title {
     font-size: 2rem;
     text-align: right;
     font-weight: 600;
 }
 
-.wwd-card-description{
+.wwd-card-description {
     font-size: 1.1rem;
     text-align: right;
 }
 
 @media screen and (max-width: 980px) {
-    .wwd-card{
+    .wwd-card {
         min-width: 300px;
     }
-    
+
 }
