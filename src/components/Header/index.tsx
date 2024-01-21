@@ -55,7 +55,7 @@ function Header() {
                   </Link>
                 </div>
                 <div className={`navitem`}>
-                  <Link href="/foss" className={`navlink`}>
+                  <Link href="/projects" className={`navlink`}>
                     FOSS
                   </Link>
                 </div>
