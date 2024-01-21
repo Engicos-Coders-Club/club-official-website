@@ -182,6 +182,7 @@ a {
   font-size: 3rem;
   font-weight: 600;
   align-self: start;
+  padding-block: 1em;
 }
 
 .event-collaboration {
@@ -234,7 +235,7 @@ a {
 .events-page-section-divider {
   background-color: white;
   height: 1px;
-  width: 100vw;
+  width: 90vw;
   margin: 5rem 0rem;
 }
 

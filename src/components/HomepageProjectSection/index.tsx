@@ -10,7 +10,7 @@ const HomepageProjectSection: React.FC = () => {
                 <HomepageProjectCard heading="Project 1" description="Description 1" />
                 <HomepageProjectCard heading="Project 2" description="Description 2" />
                 <HomepageProjectCard heading="Project 3" description="Description 3" />
-                <a href="/foo" className="view-more-button">View More <span>-&gt;</span></a>
+                <a href="/projects" className="view-more-button">View More <span>-&gt;</span></a>
                 {/* Add more HomepageProjectCard components as needed */}
             </div>
         </div>
