@@ -172,13 +172,6 @@ a {
 
 
 
-.event-grid {
-  width: 100%;
-  columns: 2;
-  gap: 4.5rem;
-  padding: 2rem 0rem;
-}
-
 .event-page-past-events {
   font-size: 3rem;
   font-weight: 600;
@@ -190,8 +183,8 @@ a {
   background: #7f34be;
   border-radius: 10px;
   padding: 2rem;
-  white-space: pre-wrap;
-
+  white-space: pre-wrap;  
+  align-self: end;
 }
 
 .event-collaboration>p:nth-child(1) {
@@ -247,10 +240,18 @@ a {
   margin: 5rem 0rem;
 }
 
-@media screen and (max-width: 980px) {
-  .event-grid {
-    columns: 1;
-    padding: 2rem 0rem;
-    gap: 0rem;
+@media screen and (min-width: 900px) {
+  .event-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+  }
+  /* move even columns down */
+  .event-grid > :nth-child(even).event-card{
+      transform: translateY(5rem);
+  }
+  /* hack for dealing with event-cards own transform on hover */
+  .event-grid > :nth-child(even).event-card:hover{
+      transform: translateY(calc(5em - 8px)) ;
   }
 }

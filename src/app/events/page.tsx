@@ -1,4 +1,3 @@
-
 import { EventCard, PageHeader, UpcomingEventCard } from '@/components'
 import Event from "../../../public/event.webp"
 
@@ -58,7 +57,6 @@ const events = [
     },
     
 ]
-
 function Events() {
   return (
     <div className="page">
@@ -80,7 +78,6 @@ function Events() {
             events.map((event,i)=>(
                 <EventCard 
                     key={i}
-                    shouldGap={i >= (events.length/2)}
                     img={event.img}
                     tags={event.tags}
                     date={event.date}

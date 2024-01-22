@@ -23,7 +23,6 @@ import "./index.css"
 */
 
 interface EventCardProps  {
-    shouldGap:boolean;
     img: string;
     tags: string[];
     date: string;
@@ -33,11 +32,11 @@ interface EventCardProps  {
 }
 
 //the component defaults to light mode styles, for dark mode, html tag must have 'dark' the className
-function EventCard({ shouldGap, img, tags, date, title, hosts, description }: EventCardProps) {
+function EventCard({ img, tags, date, title, hosts, description }: EventCardProps) {
   const [showMore, setShowMore] = useState(false)
 
   return (
-    <div className={`event-card ${shouldGap && "event-card-margin"}`}> 
+    <div className={`event-card`}> 
         <div className='event-card-img-container'>
             <Image 
                 src={img}

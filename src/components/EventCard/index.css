@@ -6,9 +6,8 @@
 }
 
 .event-card{
-    width: 100%;
+    max-width: 50em;
     transition: 0.3s;
-    margin-bottom: 4rem;
     break-inside: avoid;
 
 }
@@ -16,10 +15,6 @@
 .event-card:hover{
     overflow: hidden;
     transform: translateY(-8px);
-}
-
-.event-card-margin{
-    padding-top: 3rem;
 }
 
 .event-card-img-container{
@@ -140,11 +135,3 @@ html.dark  .event-card-tag {
 html.dark  .event-card-tag {
     background: var(--dark-bg-secondary);
 }
-
-@media screen and (max-width: 980px) {
-    .event-card{
-        margin-bottom: 2rem;
-        margin-top: 0rem;
-        padding-top: 0rem;
-    }
-  }
