@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import "./styles.css"; // Assuming you have a Header.module.css file for styling
 import Image from "next/image";
@@ -11,20 +11,20 @@ import { VscClose } from "react-icons/vsc"
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [theme, setTheme] = useState("dark")
 
+  //use OS preferred value as default state
+  const [theme, setTheme] = useState(
+    window.matchMedia("(prefers-color-scheme: dark)").matches? "dark": "light"
+  );
+  //sets after rendering as documentElement is not referring to page during first render
+  useEffect(()=>{document.documentElement.className = theme},[theme]);
+  
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
   const toggleTheme = () => {
-    if(document.documentElement.className === "dark"){
-      document.documentElement.className = "light";
-    }
-    else{
-      document.documentElement.className = "dark";
-    }
-    setTheme((prev)=>prev==="dark" ? "light" : "dark")
+    setTheme((theme==="dark") ? "light" : "dark")
   }
   
   return (
