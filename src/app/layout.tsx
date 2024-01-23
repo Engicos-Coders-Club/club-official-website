@@ -17,8 +17,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
-    <html className='dark' lang="en">
+    <html lang="en" >
       <body className={urbanist.className}>
         <Header />
           <div className="site">
