@@ -1,0 +1,75 @@
+.WhatWeDidSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding-block: 10vh;
+    padding-inline: 10em;
+}
+
+.wwdid-section-title {
+    font-size: 3rem;
+    text-align: right;
+    padding-bottom: 4rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    align-self: flex-start;
+}
+
+.WhatWeDidSection .wwdidCard:nth-child(1) {
+    background: #5c0aaa
+}
+
+.WhatWeDidSection .wwdidCard:nth-child(2) {
+    background: #700cd0
+}
+
+.WhatWeDidSection .wwdidCard:nth-child(3) {
+    background: #840ef6
+}
+
+.wwdid-section-title>span {
+    font-weight: 700;
+    font-style: italic;
+}
+
+html.dark .wwdid-card-section::after {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+html.dark .wwdid-section-title {
+    color: rgb(255, 255, 255)
+}
+
+
+
+.section-content {
+    display: flex;
+}
+
+.view-more-button {
+    font-size: 1rem;
+    /* margin: 0; */
+    padding: 15px;
+    color: white;
+    text-align: center;
+    align-self: center;
+    text-decoration: underline;
+    border: 0px solid white;
+    /* border-radius: 26px; */
+    /* position: relative; */
+    /* margin-top: 10px;*/
+}
+
+
+
+.view-more-button span {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.view-more-button:hover span {
+    transform: translateX(5px);
+    /* Move the arrow to the right on hover */
+}
