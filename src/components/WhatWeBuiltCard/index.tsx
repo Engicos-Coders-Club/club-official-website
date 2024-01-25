@@ -8,12 +8,10 @@ interface WhatWeBuiltCardProps {
 
 const WhatWeBuiltCard: React.FC<WhatWeBuiltCardProps> = ({ heading, description }) => {
   return (
-    <div className="homepage-project-card">
-      <div className="card-image">
-        <Image src={placeholderImag} alt='placeholder' width={100} height={50}/>
-      </div>
-      <h2 className="card-heading">{heading}</h2>
-      <p className="card-description">{description}</p>
+    <div className="wwbuilt-card">
+      <h2 className="wwbuilt-card-heading">{heading}</h2>
+      <p className="wwbuilt-card-description">{description}</p>
+      <p>🧧Javascript ⭐9 🔧8</p>
     </div>
   );
 };
