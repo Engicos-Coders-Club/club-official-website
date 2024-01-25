@@ -1,6 +1,6 @@
-export { HomepageProjectCard } from "./HomepageProjectCard";
+export { WhatWeBuiltCard } from "./WhatWeBuiltCard";
 export { TestComponent } from "./TestComponent";
-export { HomepageProjectSection } from "./HomepageProjectSection"
+export { WhatWeBuiltSection } from "./WhatWeBuiltSection"
 export { EventCard } from "./EventCard";
 export { WhatWeDoCard } from "./WhatWeDoCard";
 export { WhatWeDoSection } from "./WhatWeDoSection";
