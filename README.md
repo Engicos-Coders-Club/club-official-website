@@ -26,7 +26,7 @@ Our project's blueprint and structural planning are currently in progress throug
 
 ✏ Wireframe and planning : [Excalidraw wireframe](https://excalidraw.com/#room=18699433c225176ff560,yPnaQIh4pP0gF8QMUxQQEg)
 
-🖌️ Design Link: [Figma](https://www.figma.com/file/NgAJI0njrDA1ZKtPykmqPZ/Coders'-Club%3A-Website?type=design&node-id=7%3A2&mode=design&t=EoajAN7gDnKzAiBh-1)
+🖌️ Design Link: [Figma](https://www.figma.com/file/NgAJI0njrDA1ZKtPykmqPZ/Coders'-Club%3A-Website?type=design&node-id=142%3A411&mode=design&t=gsyED177wuwCvmAJ-1)
 
 Any suggestions on the UI/UX for the website will be highly appreciated.
 
