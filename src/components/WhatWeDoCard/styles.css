@@ -16,14 +16,17 @@
 }
 
 .wwd-card-title {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: right;
     font-weight: 600;
+    padding: 0.6em;
 }
 
 .wwd-card-description {
     font-size: 1.1rem;
-    text-align: right;
+    text-align: left;
+    padding-inline: 2em;
+    padding-block-end: 2em;
 }
 
 @media screen and (max-width: 980px) {

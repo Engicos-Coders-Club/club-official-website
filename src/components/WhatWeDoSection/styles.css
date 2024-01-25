@@ -1,12 +1,10 @@
 .wwd-section {
-    position: relative;
-    width: 100%;
-    padding: 0 8vw;
-    padding-bottom: 3em;
+    padding-block: 10vh;
+    padding-inline: 8vw;
 }
 
 .wwd-section-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: right;
     padding-bottom: 4rem;
     font-weight: 500;
