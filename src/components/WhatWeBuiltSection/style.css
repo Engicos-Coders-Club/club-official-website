@@ -5,6 +5,7 @@
   justify-content: space-between;
   width: 100vw;
   padding-block: 10vh;
+  padding-inline: 10em;
 }
 
 .wwb-section-title {
@@ -13,6 +14,19 @@
   padding-bottom: 4rem;
   font-weight: 500;
   color: black;
+  align-self: flex-start;
+}
+
+.wwb-card-section .wwd-card:nth-child(1) {
+  background: #5c0aaa
+}
+
+.wwb-card-section .wwd-card:nth-child(2) {
+  background: #700cd0
+}
+
+.wwb-card-section .wwd-card:nth-child(3) {
+  background: #840ef6
 }
 
 .wwb-section-title>span {
@@ -24,7 +38,7 @@ html.dark .wwb-card-section::after {
   border: 1px solid white;
 }
 
-html.dark .section-title {
+html.dark .wwb-section-title {
   color: white
 }
 
