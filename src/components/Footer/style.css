@@ -11,6 +11,7 @@
     padding: 1em;
     text-transform: uppercase;
     font-weight: bold;
+    color: black;
 }
 
 .Footer>div{
@@ -65,6 +66,10 @@
 .copyright-contact-love>div{
     flex: max-content 1;
     margin: 1em 0;
+}
+
+html.dark .Footer {
+    color: white;
 }
 
 @media screen and (min-width: 600px){
