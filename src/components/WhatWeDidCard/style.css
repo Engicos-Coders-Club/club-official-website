@@ -1,0 +1,59 @@
+.wwdidCard {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0px;
+    border-radius: 5px;
+    transition: border-radius 0.3s;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.wwdidCard:hover .card-image {
+    border-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.wwdidCard:hover {
+    border-radius: 26px;
+}
+
+.card-image {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    /* Adjust this value to control the aspect ratio */
+    position: relative;
+    overflow: hidden;
+    transition: border-radius 0.3s;
+
+}
+
+.card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-heading {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-align: right;
+}
+
+.wwdid-card-description {
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 15px;
+    text-align: right;
+}

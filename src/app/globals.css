@@ -8,11 +8,11 @@
   --light-bg: #EBEBEB;
   --dark-text: #EFEFEF;
   --light-text: #171717;
-  --dark-primary: #7044DF; 
+  --dark-primary: #7044DF;
   --light-primary: #7044DF;
-  --dark-secondary: #4B09A6; 
+  --dark-secondary: #4B09A6;
   --light-secondary: #CDAEFF;
-  --dark-tertiary: #270061 ;
+  --dark-tertiary: #270061;
   --light-tertiary: #EADBFF;
   --accent-primary: #C2E110;
   --accent-secondary: #18E79C;
@@ -40,12 +40,124 @@ html.dark body {
   background-color: var(--dark-bg);
 }
 
-.page{
+.page {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
+  padding-inline: 3em;
+}
+
+.textSection {
+  padding-block: 2em;
+  text-align: center;
+}
+
+.text {
+  font-size: 16px;
+  text-align: end;
+}
+
+.title {
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+
+.formButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.arrow {
+  margin-left: 5px;
+}
+
+.twoColumnSection {
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  width: 100vw;
+  padding-inline: 4em;
+}
+
+.touchColumn {
+  flex-direction: column;
+  /* Display items in a column */
+  align-items: flex-end;
+  /* Align items to the right end */
+  flex: 3;
+  text-align: right;
+  padding-right: 15px;
+  display: flex;
+}
+
+.addressTitle {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.touchTitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+  justify-content: flex-end;
+  /* Align to the right end */
+  display: flex;
+  /* Add this */
+  align-items: center;
+  /* Add this */
+}
+
+.actualAddress {
+  font-size: 24px;
+}
+
+.copyButton {
+  background-color: transparent;
+  padding: 0px 0px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  /* Add this */
+  align-items: center;
+  /* Add this */
+  justify-content: flex-end;
+  font-size: xx-large;
+}
+
+.emailIcon {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 3px;
+  transition: border-radius 0.3s;
+}
+
+.copyButton:hover .emailIcon {
+  border-radius: 5px;
+}
+
+.addressColumn {
+  flex: 2;
+  padding-left: 10px;
+}
+
+.description {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+.buttonSection {
+  margin-top: 40px;
+  text-align: center;
+  border-top: var(--line-color);
+  border-bottom: var(--line-color);
+  padding: 10px;
 }
 
 a {
@@ -60,42 +172,44 @@ a {
 }
 
 
-.event-grid{
+.event-grid {
   width: 100%;
   columns: 2;
   gap: 4.5rem;
   padding: 2rem 0rem;
 }
 
-.event-page-past-events{
+.event-page-past-events {
   font-size: 3rem;
   font-weight: 600;
   align-self: start;
+  padding-block: 1em;
 }
 
-.event-collaboration{
-  background:#7f34be;
+.event-collaboration {
+  background: #7f34be;
   border-radius: 10px;
-  padding:2rem;
+  padding: 2rem;
   white-space: pre-wrap;
-  
+
 }
 
-.event-collaboration > p:nth-child(1){
-  font-size: 1.5rem;
-  text-align: right;
-}
-.event-collaboration > p:nth-child(2){
+.event-collaboration>p:nth-child(1) {
   font-size: 1.5rem;
   text-align: right;
 }
 
-.event-collaboration > p:nth-child(2) > span{
+.event-collaboration>p:nth-child(2) {
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.event-collaboration>p:nth-child(2)>span {
   font-weight: 600;
   word-break: break-all;
 }
 
-.events-page-upcoming-events{
+.events-page-upcoming-events {
   display: flex;
   gap: 2rem;
   width: 100%;
@@ -103,25 +217,33 @@ a {
   justify-content: start;
   overflow-x: auto;
   margin-top: 2rem;
-  scrollbar-width: none; 
+  scrollbar-width: none;
   -ms-overflow-style: none;
 
 }
 
-.events-page-upcoming-events::-webkit-scrollbar{
-  background: transparent; /* Chrome/Safari/Webkit */
+.events-page-upcoming-events::-webkit-scrollbar {
+  background: transparent;
+  /* Chrome/Safari/Webkit */
   width: 0px;
 }
 
-.events-page-scroll-text{
-  color: rgba(255,255,255,0.8);
+.events-page-scroll-text {
+  color: rgba(255, 255, 255, 0.8);
   align-self: start;
 }
 
-.events-page-section-divider{
+.events-page-section-divider {
   background-color: white;
   height: 1px;
-  width: 100vw;
+  width: 90vw;
+  margin: 5rem 0rem;
+}
+
+.events-page-column-divider {
+  background-color: white;
+  height: 100%;
+  width: 1px;
   margin: 5rem 0rem;
 }
 

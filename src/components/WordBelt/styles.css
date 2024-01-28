@@ -1,0 +1,49 @@
+.wordBelt {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-block: 1vw;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    /* animation: moveLeft 10s linear infinite; */
+    /* margin-block: 3em; */
+    /* background-color: #000957; */
+}
+
+.word {
+    margin-right: 20px;
+    white-space: nowrap;
+    /* animation: moveLeft 10s linear infinite; */
+    /* background-color: #602cd9; */
+    padding: 1em;
+    border-radius: 2em;
+    border-color: #74c6e7;
+    border-style: inset;
+    font-weight: 800;
+}
+
+html.dark .wordBelt {
+    color: rgb(255, 255, 255);
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}

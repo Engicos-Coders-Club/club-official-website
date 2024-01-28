@@ -18,7 +18,7 @@
   
   .page-header-title{
     text-transform: uppercase;
-    font-size: 9vmax;
+    font-size: 6vmax;
     font-weight: 900;
     letter-spacing: 0.2rem;
     
@@ -28,7 +28,7 @@
   
   .page-header-description{
     text-transform: capitalize;
-    font-size: 4vmax;
+    font-size: 3vmax;
     margin-bottom: 1rem;
     padding: 0rem 1rem;
   }

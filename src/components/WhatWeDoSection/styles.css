@@ -1,18 +1,17 @@
-.wwd-section { 
-    position: relative;
-    width: 100%;
-    padding: 0 8vw;
+.wwd-section {
+    padding-block: 10vh;
+    padding-inline: 8vw;
 }
 
-.wwd-section-title{
-    font-size: 2.5rem;
+.wwd-section-title {
+    font-size: 3rem;
     text-align: right;
     padding-bottom: 4rem;
     font-weight: 500;
     color: black;
 }
 
-.wwd-section-title > span{
+.wwd-section-title>span {
     font-weight: 700;
     font-style: italic;
 }
@@ -24,49 +23,51 @@
 }
 
 .wwd-card-section .wwd-card:nth-child(1) {
-    background:#5c0aaa
+    background: #5c0aaa
 }
 
 .wwd-card-section .wwd-card:nth-child(2) {
-    background:#700cd0
+    background: #700cd0
 }
 
 .wwd-card-section .wwd-card:nth-child(3) {
-    background:#840ef6
+    background: #840ef6
 }
 
 
 
-.wwd-card-section::after{
+.wwd-card-section::after {
     content: " ";
     position: absolute;
-    width: 80%;
+    width: 93%;
+    background-color: #000957;
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     top: -15%;
+    border-radius: 15px;
     right: 0%;
 }
 
-html.dark .wwd-card-section::after{
+html.dark .wwd-card-section::after {
     border: 1px solid white;
 }
 
-html.dark .wwd-section-title{
-    color:white
+html.dark .wwd-section-title {
+    color: white
 }
 
 @media screen and (max-width: 980px) {
-    .wwd-card-section::after{
+    .wwd-card-section::after {
         display: none;
     }
-    
-    .wwd-card-section{
+
+    .wwd-card-section {
         overflow-x: auto;
         width: 100%;
         gap: 2rem;
     }
-    
-    .wwd-section{
-	padding: 0 2rem;
+
+    .wwd-section {
+        padding: 0 2rem;
     }
 }
