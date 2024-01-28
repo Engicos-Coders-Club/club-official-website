@@ -1,11 +1,17 @@
 .WhatWeBuiltSection {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100vw;
   padding-block: 10vh;
-  padding-inline: 10em;
+  padding-inline: 8vw;
+}
+
+.wwb-section-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .wwb-section-title {
@@ -48,18 +54,14 @@ html.dark .wwb-section-title {
   display: flex;
 }
 
-.view-more-button {
+.wwb-view-more-button {
   font-size: 1rem;
-  /* margin: 0; */
   padding: 15px;
   color: white;
   text-align: center;
-  align-self: center;
+  align-self: flex-end;
   text-decoration: underline;
   border: 0px solid white;
-  /* border-radius: 26px; */
-  /* position: relative; */
-  /* margin-top: 10px;*/
 }
 
 
