@@ -55,12 +55,12 @@ html.dark .wwb-section-title {
 }
 
 .wwb-view-more-button {
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 15px;
   color: white;
   text-align: center;
   align-self: flex-end;
-  text-decoration: underline;
+  text-decoration: none;
   border: 0px solid white;
 }
 
