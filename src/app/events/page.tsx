@@ -89,7 +89,7 @@ function Events() {
         }
         <div className='event-collaboration'>
             <p>Interested in collaborating with us? 👀</p>
-            <p>Drop us a message at <br/><span>codersclub.gec@gmail.com</span></p>
+          <p>Drop us a message at <br/><a href="mailto:codersclub.gec@gmail.com">codersclub.gec@gmail.com</a></p>
         </div>
 
       </div>
