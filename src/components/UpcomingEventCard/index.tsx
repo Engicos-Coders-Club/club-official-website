@@ -14,7 +14,6 @@ function UpcomingEventCard({img,title}:UpcomingEventCardProps) {
         <div className='event-card-img-container'>
             
             <Image 
-                loader={({src})=>src}
                 src={img}
                 width={0}
                 height={400}

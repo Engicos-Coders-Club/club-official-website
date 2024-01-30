@@ -40,7 +40,6 @@ function EventCard({ shouldGap, img, tags, date, title, hosts, description }: Ev
     <div className={`event-card ${shouldGap && "event-card-margin"}`}> 
         <div className='event-card-img-container'>
             <Image 
-                loader={({src})=>src}
                 src={img}
                 width={0}
                 height={400}

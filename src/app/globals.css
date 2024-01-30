@@ -36,8 +36,13 @@ body {
   transition: 0.3s;
 }
 
-html.dark body {
+html.dark body{
   background-color: var(--dark-bg);
+  
+}
+
+html.dark{
+  color-scheme: dark;
 }
 
 .page {
