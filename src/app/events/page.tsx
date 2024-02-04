@@ -1,3 +1,4 @@
+
 import { EventCard, PageHeader, UpcomingEventCard } from '@/components'
 import Event from "../../../public/event.webp"
 
@@ -57,6 +58,7 @@ const events = [
     },
     
 ]
+
 function Events() {
   return (
     <div className="page">

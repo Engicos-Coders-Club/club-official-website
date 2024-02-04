@@ -1,0 +1,77 @@
+.WhatWeBuiltSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100vw;
+  padding-block: 10vh;
+  padding-inline: 8vw;
+}
+
+.wwb-section-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.wwb-section-title {
+  font-size: 3rem;
+  text-align: right;
+  padding-bottom: 4rem;
+  font-weight: 500;
+  color: black;
+  align-self: flex-start;
+}
+
+.wwb-card-section .wwd-card:nth-child(1) {
+  background: #5c0aaa
+}
+
+.wwb-card-section .wwd-card:nth-child(2) {
+  background: #700cd0
+}
+
+.wwb-card-section .wwd-card:nth-child(3) {
+  background: #840ef6
+}
+
+.wwb-section-title>span {
+  font-weight: 700;
+  font-style: italic;
+}
+
+html.dark .wwb-card-section::after {
+  border: 1px solid white;
+}
+
+html.dark .wwb-section-title {
+  color: white
+}
+
+
+
+.section-content {
+  display: flex;
+}
+
+.wwb-view-more-button {
+  font-size: 1.2rem;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  align-self: flex-end;
+  text-decoration: none;
+  border: 0px solid white;
+}
+
+
+
+.view-more-button span {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.view-more-button:hover span {
+  transform: translateX(5px);
+  /* Move the arrow to the right on hover */
+}
