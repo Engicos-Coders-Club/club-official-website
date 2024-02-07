@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
       </div>
       <div className="copyright-contact-love">
         <div className="copyright">
-          <p>All rights reserved. Coders&apos; Club &copy; 2023</p>
+          <p>All rights reserved. Coders&apos; Club &copy; 2024</p>
         </div>
         <div className="footer-contact-icons" >
           <ul>
